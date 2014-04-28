@@ -109,8 +109,8 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, add the follow
 The syntax definition allow the syntax highlighting.
 In **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :
 * `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
-* `C++.sublime-build`, which embed the build system, was customized and renamed in `CCpp.sublime-build`.
-* `C++.sublime-settings`, which specifies the supported file types, was just renamed in `CCpp.sublime-settings`. 
+* `C++.sublime-build`, which embed the build system, was customized and renamed in [`CCpp.sublime-build`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-build).
+* `C++.sublime-settings`, which specifies the supported file types, was just renamed in [`CCpp.sublime-settings`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-settings). 
 * All the other files were preserved.
 
 To keep a flexible and easily maintainable system it was necessary to analyze, cut out and document the original code. Then extract useful pieces, merge them and reorganize the whole. (see [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage))
@@ -119,7 +119,7 @@ The greatest part of the changes are in the [`CCpp.tmLanguage`](https://github.c
 
 ## Very important
 
-This package was coded with a very simple approach. A main behavior is describe then smaller tweaks came to get the desirable result.
+The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple approach. A main behavior is describe then smaller tweaks came to get the desirable result.
 
 For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define the "block detection" behavior.
 

@@ -47,6 +47,8 @@ THE GUIDE
 
 This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending on your Sublime Text version or your operating system. 
 
+The informations provided in this guide should help you to understand the core of the syntax definition and how globally things work inside Sublime Text. 
+
 # Install the package
 
 ## Manually
@@ -134,7 +136,7 @@ If you want to follow this process you have to put the main behavior at the bott
 
 ## How to edit a *.sublime package
 
-`*.sublime-package` like `CCpp.sublime-package` are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
+`*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
 * Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
 * Copy and paste it in a safe place and do your tweaks on this copy.
 * To open the package you have to rename it in `*.zip` then extract it.

@@ -17,9 +17,9 @@ The main objective of this project is to provide a fully functional and self-con
 **I have to mention two major things before to continue :**
 
 * First, I'm really new in the huge world of programming. The first release of this package is the result of my first week of learning. My original goal is to learn C++ with a lightweight and flexible tool. A tool which allow me to customize my environment and let me control things like compiling. This was not an easy task because of the huge amount of solutions available out there. Finally Sublime Text seems to suit pretty well to my needs with his reasonable learning curve. 
-* The second thing I want to mention is, in my opinion, **this package is not ready for production**. Even if the main behaviors are ever described and seem to work correctly, I think it will demand you a certain investment before to make it fully functional in a professional environment. 
+* The second thing I want to mention is, in my opinion, **this package is not ready for production**. Even if the main behaviors are ever described and seem to work correctly, I think it will demand you a certain investment before to make it fully functional for your professional environment. 
 
-But don't worry, as it is my primary tool for my journey to C++, be sure that it will be updated and fully functional as quick as possible.
+But don't worry, as it is my primary tool for my journey to C++, I will do my best to update it quickly and make it fully functional as soon as possible.
 
 ## Preview
 **Quick overview. (Oasis Theme not included)**
@@ -60,7 +60,7 @@ Customize your syntax highlighting
 ==================================
 # Prerequisite
 
-## Syntax definition design
+## Syntax definition
 
 The syntax definition allow the syntax highlighting.
 To be able to quickly get a result only the necessary pieces of code were modified :
@@ -74,26 +74,25 @@ To keep a flexible and easily maintainable system it was necessary to analyze, c
 The greatest part of the changes are in the `CCpp.tmLanguage`. Now it is organized and documented to facilitate his approach and his maintenance. Functional pieces like comments, quoted strings or preprocessor modules are untouched.
 
 **Important**
+
 This package was coded with a very simple approach. A main behavior is describe then smaller tweaks came to get the desirable result.
 
-For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first scopes and define the "block detection" behavior.
+For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define the "block detection" behavior.
 
-If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!!(see the example below)
+If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
 ## C++ Starting Kit scope list
 
-Preprocessor
-Punctuation
-Function support
+(To do)
 
 ## Manipulate *.sublime-package format
 
 `*.sublime-package` like `CCpp.sublime-package` are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
 * Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
 * Copy and paste it in a safe place and do your tweaks on this copy.
-* To open the package you have to rename it in `*.zip` then extract it in the same folder.
+* To open the package you have to rename it in `*.zip` then extract it.
 * Inside the extracted folder you will find the editable files.
 * When finished, save your changes.
 * Close Sublime Text. 
@@ -102,18 +101,16 @@ Function support
 * Restart Sublime Text.
 
 ## Edit your theme
-**Retrieve a scope name**
-* Put your cursor under the scope you want to know the name.
-* Type `Ctrl + Alt + Shift + P`.
-
-The you need to open your *.tmTheme file.
-
 **Locate your *.tmTheme**
 If you want to tweak a default theme I recommend you to copy and rename it first in your `Sublime Text/Data/Packages/User` folder.
 * Default themes are located inside `Sublime Text/Packages/Color Scheme - Default.sublime-package`. 
 * User themes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
 
-**Explore your *tmTheme**
+**Retrieve a scope name**
+* Put your cursor under the scope you want to know the name.
+* Type `Ctrl + Alt + Shift + P`.
+
+**Explore your *.tmTheme**
 * Make a search by typing `Ctrl + F`.
 * Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
 

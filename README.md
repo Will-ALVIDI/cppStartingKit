@@ -136,7 +136,7 @@ If you want to follow this process you have to put the main behavior at the bott
 
 ## How to edit a *.sublime package
 
-`*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
+`*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside those packages you have to follow these steps :
 * Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
 * Copy and paste it in a safe place and do your tweaks on this copy.
 * To open the package you have to rename it in `*.zip` then extract it.

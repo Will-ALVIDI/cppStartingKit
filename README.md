@@ -22,7 +22,7 @@ The main objective of this project is to provide a fully functional and self-con
 But don't worry, as it is my primary tool for my journey to C++, be sure that it will be updated and fully functional as quick as possible.
 
 ## Preview
-**Quick overview. (Oasis Theme and Soda Theme not included)**
+**Quick overview. (Oasis Theme not included)**
 
 ![C++ Starting Kit Standard behavior](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/standard-behavior.jpg?raw=true)
 
@@ -38,7 +38,7 @@ But don't worry, as it is my primary tool for my journey to C++, be sure that it
 
 ![C++ Starting Kit Any Function Support](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/any-function-detection.jpg?raw=true)
 
-**Easily add to your definition with the documented configuration file.**
+**Easily add to your syntax definition with the documented configuration file.**
 
 ![C++ Starting Kit Add Keyword](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/Namespace-added.jpg?raw=true)
 
@@ -46,7 +46,7 @@ THE GUIDE
 =========
 This guide covers the management of this package with Sublime Text 3 under Windows. You can "translate" specific manipulations for your version of Sublime Text or your operating system by a quick research on the Internet.
 
-How to install the package
+Install the package
 ==========================
 
 # Manually
@@ -56,8 +56,8 @@ How to install the package
 (To do - not yet available)
 
 
-How to customize your syntax highlighting
-=========================================
+Customize your syntax highlighting
+==================================
 # Prerequisite
 
 ## Syntax definition design
@@ -78,7 +78,7 @@ This package was coded with a very simple approach. A main behavior is describe 
 
 For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first scopes and define the "block detection" behavior.
 
-If you want to do something like that you have to put the main behavior at the bottom of your overrides, and not opposite !!!(see the example below)
+If you want to do something like that you have to put the main behavior at the bottom of your overrides, and not the opposite !!!(see the example below)
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
@@ -98,7 +98,7 @@ Function support
 * When finished, save your changes.
 * Close Sublime Text. 
 * "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
-* Copy your updated `*.sublime-packag`e and overwrite the one in your `Sublime Text/Packages` folder.
+* Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
 * Restart Sublime Text.
 
 ## Edit your theme
@@ -117,6 +117,7 @@ The you need to open your theme file.
 * Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
 
 **Support a missing scope**
+
 If you are sure that the scope doesn't exist in your list, add the following lines and customize them :
 
 		<dict>
@@ -137,8 +138,8 @@ If you are sure that the scope doesn't exist in your list, add the following lin
 ## Add new scopes
 
 
-# How to use the included C++ custom build
-==========================================
+Use the included C++ custom build
+=================================
 # Prerequisite
 
 ## Install MinGW 

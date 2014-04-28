@@ -44,7 +44,7 @@ But don't worry, as it is my primary tool for my journey to C++, be sure that it
 
 THE GUIDE
 =========
-This guide covers the management of this package with Sublime Text 3 under Windows. You can "translate" specific manipulations for your version of Sublime Text or your operating system by a quick research on the Internet.
+This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending of your Sublime Text version or operating system. 
 
 Install the package
 ==========================
@@ -53,7 +53,7 @@ Install the package
 (To do)
 
 # From Package Control
-(To do - not yet available)
+(To do)
 
 
 Customize your syntax highlighting
@@ -78,7 +78,7 @@ This package was coded with a very simple approach. A main behavior is describe 
 
 For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first scopes and define the "block detection" behavior.
 
-If you want to do something like that you have to put the main behavior at the bottom of your overrides, and not the opposite !!!(see the example below)
+If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!!(see the example below)
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
@@ -93,7 +93,7 @@ Function support
 `*.sublime-package` like `CCpp.sublime-package` are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
 * Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
 * Copy and paste it in a safe place and do your tweaks on this copy.
-* To open the package you have to rename it `*.zip` then extract it in the same folder.
+* To open the package you have to rename it in `*.zip` then extract it in the same folder.
 * Inside the extracted folder you will find the editable files.
 * When finished, save your changes.
 * Close Sublime Text. 
@@ -106,9 +106,10 @@ Function support
 * Put your cursor under the scope you want to know the name.
 * Type `Ctrl + Alt + Shift + P`.
 
-The you need to open your theme file.
+The you need to open your *.tmTheme file.
 
 **Locate your *.tmTheme**
+If you want to tweak a default theme I recommend you to copy and rename it first in your `Sublime Text/Data/Packages/User` folder.
 * Default themes are located inside `Sublime Text/Packages/Color Scheme - Default.sublime-package`. 
 * User themes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
 
@@ -116,9 +117,12 @@ The you need to open your theme file.
 * Make a search by typing `Ctrl + F`.
 * Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
 
-**Support a missing scope**
+**Change you theme**
+* Go to `Preferences > Color Scheme` menu.
 
-If you are sure that the scope doesn't exist in your list, add the following lines and customize them :
+**Add a missing scope**
+
+If you are sure that the scope doesn't exist in your `*.tmTheme`, add the following lines and fill the fields correctly :
 
 		<dict>
 			<key>name</key>

@@ -22,9 +22,25 @@ The main objective of this project is to provide a fully functional and self-con
 But don't worry, as it is my primary tool for my journey to C++, be sure that it will be updated and fully functional as quick as possible.
 
 ## Preview
+**Quick overview. (Oasis Theme and Soda Theme not included)**
 
-![Standard behavior](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/standard-behavior.jpg)
+![C++ Starting Kit Standard behavior](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/standard-behavior.jpg?raw=true)
 
+**Arithmetic operators are now customizable.**
+
+![C++ Starting Kit Arithmetic Operators](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/custom-arithmetic-operators.jpg?raw=true)
+
+**More customization.**
+
+![C++ Starting Kit Customize Everything](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/customize-everything.jpg?raw=true)
+
+**Any function support.**
+
+![C++ Starting Kit Any Function Support](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/any-function-detection.jpg?raw=true)
+
+**Easily add to your definition with the documented configuration file.**
+
+![C++ Starting Kit Add Keyword](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/Namespace-added.jpg?raw=true)
 
 THE GUIDE
 =========
@@ -48,21 +64,23 @@ How to customize your syntax highlighting
 
 The syntax definition allow the syntax highlighting.
 To be able to quickly get a result only the necessary pieces of code were modified :
-* C.tmLanguage and C++.tmLanguage, which were mainly responsible of the syntax definition, were merged into CCpp.tmLanguage.
-* C++.sublime-build, which embed the build system, was customized and renamed in CCpp.sublime-build.
-* C++.sublime-settings, which specifies the supported file types, was just renamed in CCpp.sublime-settings. 
+* `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into `CCpp.tmLanguage`.
+* `C++.sublime-build`, which embed the build system, was customized and renamed in `CCpp.sublime-build`.
+* `C++.sublime-settings`, which specifies the supported file types, was just renamed in `CCpp.sublime-settings`. 
 * All the other files were preserved.
 
-To keep a flexible and easily maintainable system it was necessary to analyze, cut out and document the original code. Then extract useful pieces, merge them and reorganize the whole. (see CCpp.tmLanguage)
+To keep a flexible and easily maintainable system it was necessary to analyze, cut out and document the original code. Then extract useful pieces, merge them and reorganize the whole. (see `CCpp.tmLanguage`)
 
-The greatest part of the changes are in the CCpp.tmLanguage. Now it is organized and documented to facilitate his approach and his maintenance. Functional pieces like comments, quoted strings or preprocessor modules are untouched.
+The greatest part of the changes are in the `CCpp.tmLanguage`. Now it is organized and documented to facilitate his approach and his maintenance. Functional pieces like comments, quoted strings or preprocessor modules are untouched.
 
 **Important**
 This package was coded with a very simple approach. A main behavior is describe then smaller tweaks came to get the desirable result.
 
-For example the curly brackets were defined as open.curly.bracket.ccpp and close.curly.bracket.ccpp. Then open.curly.bracket.block.ccpp and close.curly.bracket.block.ccpp were added to override the first scopes and define the "block detection" behavior.
+For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first scopes and define the "block detection" behavior.
 
-If you want to do something like that you have to put the main behavior at the bottom of your overrides, and not opposite !!! 
+If you want to do something like that you have to put the main behavior at the bottom of your overrides, and not opposite !!!(see the example below)
+
+![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
 ## C++ Starting Kit scope list
 
@@ -72,33 +90,33 @@ Function support
 
 ## Manipulate *.sublime-package format
 
-*.sublime-package like CCpp.sublime-package are *.zip archive. If you want to modify files inside this package you have to follow these steps :
-* Inside your Sublime Text/Packages folder you have to find the package you want to modify.
+`*.sublime-package` like `CCpp.sublime-package` are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
+* Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
 * Copy and paste it in a safe place and do your tweaks on this copy.
-* To open the package you have to rename it *.zip then extract it in the same folder.
+* To open the package you have to rename it `*.zip` then extract it in the same folder.
 * Inside the extracted folder you will find the editable files.
 * When finished, save your changes.
 * Close Sublime Text. 
-* "Re-archive" your extracted folder in *.zip then rename it in *.sublime-package.
-* Copy your updated *.sublime-package and overwrite the one in your Sublime Text/Packages folder.
+* "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
+* Copy your updated `*.sublime-packag`e and overwrite the one in your `Sublime Text/Packages` folder.
 * Restart Sublime Text.
 
 ## Edit your theme
-Retrieve a scope name :
+**Retrieve a scope name**
 * Put your cursor under the scope you want to know the name.
-* Type Ctrl + Alt + Shift + P.
+* Type `Ctrl + Alt + Shift + P`.
 
 The you need to open your theme file.
 
-Locate your *.tmTheme
-* Default themes are located in Sublime Text/Packages/Color Scheme - Default.sublime-package. 
-* User themes are located in Sublime Text/Data/Packages/User.
+**Locate your *.tmTheme**
+* Default themes are located inside `Sublime Text/Packages/Color Scheme - Default.sublime-package`. 
+* User themes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
 
-Explore your *tmTheme
-* Make a search by typing Ctrl + F.
-* Type what you want to find and don't forget to look everywhere in the document by pressing Find and Find Prev.
+**Explore your *tmTheme**
+* Make a search by typing `Ctrl + F`.
+* Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
 
-Support a missing scope
+**Support a missing scope**
 If you are sure that the scope doesn't exist in your list, add the following lines and customize them :
 
 		<dict>

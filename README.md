@@ -62,7 +62,9 @@ The informations provided in this guide should help you to understand the core o
 
 # Customize your Theme
 
-If you use a default theme or something downloaded from the Internet you will surely need to tweak your configuration file to make it efficient with **C++ Starting Kit**. This next part is a set of few tips which help you to do it as easily as possible.
+If you use a default theme or something downloaded from the Internet you will surely need to tweak your theme configuration file(`*.tmTheme`) to make it fully functional with **C++ Starting Kit**. A good alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
+
+Otherwise check this next part, it's a set of useful few tips as well as a good reference guide.
 
 ## Change your theme
 

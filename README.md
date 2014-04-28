@@ -62,9 +62,11 @@ The informations provided in this guide should help you to understand the core o
 
 # Customize your Theme
 
-If you use a default theme or something downloaded from the Internet you will surely need to tweak your theme configuration file(`*.tmTheme`) to make it fully functional with **C++ Starting Kit**. A good alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
+If you use a default theme or something downloaded from the Internet you will surely need to tweak your theme configuration file(`*.tmTheme`) to make it fully functional with **C++ Starting Kit**. 
 
-Otherwise check this next part, it's a set of useful few tips as well as a good reference guide.
+A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
+
+Otherwise check the next part, it's a set of useful tips which will help to customize your Sublime Text environment.
 
 ## Change your theme
 

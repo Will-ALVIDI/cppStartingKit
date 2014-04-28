@@ -56,68 +56,30 @@ Install the package
 (To do)
 
 
-Customize your syntax highlighting
-==================================
-# Prerequisite
+Customize your Theme
+====================
 
-## Syntax definition
-
-The syntax definition allow the syntax highlighting.
-To be able to quickly get a result only the necessary pieces of code were modified :
-* `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into `CCpp.tmLanguage`.
-* `C++.sublime-build`, which embed the build system, was customized and renamed in `CCpp.sublime-build`.
-* `C++.sublime-settings`, which specifies the supported file types, was just renamed in `CCpp.sublime-settings`. 
-* All the other files were preserved.
-
-To keep a flexible and easily maintainable system it was necessary to analyze, cut out and document the original code. Then extract useful pieces, merge them and reorganize the whole. (see `CCpp.tmLanguage`)
-
-The greatest part of the changes are in the `CCpp.tmLanguage`. Now it is organized and documented to facilitate his approach and his maintenance. Functional pieces like comments, quoted strings or preprocessor modules are untouched.
-
-**Important**
-
-This package was coded with a very simple approach. A main behavior is describe then smaller tweaks came to get the desirable result.
-
-For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define the "block detection" behavior.
-
-If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
-
-![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
-
-## C++ Starting Kit scope list
-
-(To do)
-
-## Manipulate *.sublime-package format
-
-`*.sublime-package` like `CCpp.sublime-package` are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
-* Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
-* Copy and paste it in a safe place and do your tweaks on this copy.
-* To open the package you have to rename it in `*.zip` then extract it.
-* Inside the extracted folder you will find the editable files.
-* When finished, save your changes.
-* Close Sublime Text. 
-* "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
-* Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
-* Restart Sublime Text.
-
-## Edit your theme
 **Locate your *.tmTheme**
+
 If you want to tweak a default theme I recommend you to copy and rename it first in your `Sublime Text/Data/Packages/User` folder.
 * Default themes are located inside `Sublime Text/Packages/Color Scheme - Default.sublime-package`. 
 * User themes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
 
 **Retrieve a scope name**
+
 * Put your cursor under the scope you want to know the name.
 * Type `Ctrl + Alt + Shift + P`.
 
 **Explore your *.tmTheme**
+
 * Make a search by typing `Ctrl + F`.
 * Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
 
-**Change you theme**
+**Change your theme**
+
 * Go to `Preferences > Color Scheme` menu.
 
-**Add a missing scope**
+**Add a missing scope in your *.tmTheme**
 
 If you are sure that the scope doesn't exist in your `*.tmTheme`, add the following lines and fill the fields correctly :
 
@@ -136,7 +98,50 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, add the follow
 		</dict>
 
 
-## Add new scopes
+Customize your syntax definition
+================================
+# What you need to know
+
+The syntax definition allow the syntax highlighting.
+In **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :
+* `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into `CCpp.tmLanguage`.
+* `C++.sublime-build`, which embed the build system, was customized and renamed in `CCpp.sublime-build`.
+* `C++.sublime-settings`, which specifies the supported file types, was just renamed in `CCpp.sublime-settings`. 
+* All the other files were preserved.
+
+To keep a flexible and easily maintainable system it was necessary to analyze, cut out and document the original code. Then extract useful pieces, merge them and reorganize the whole. (see `CCpp.tmLanguage`)
+
+The greatest part of the changes are in the `CCpp.tmLanguage`. Now it is organized and documented to facilitate his approach and his maintenance. Functional pieces like comments, quoted strings or preprocessor modules are untouched.
+
+## C++ Starting Kit scope list
+
+(To do)
+
+## Important note
+
+This package was coded with a very simple approach. A main behavior is describe then smaller tweaks came to get the desirable result.
+
+For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define the "block detection" behavior.
+
+If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
+
+![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
+
+# Manipulate *.sublime-package format
+
+`*.sublime-package` like `CCpp.sublime-package` are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
+* Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
+* Copy and paste it in a safe place and do your tweaks on this copy.
+* To open the package you have to rename it in `*.zip` then extract it.
+* Inside the extracted folder you will find the editable files.
+* When finished, save your changes.
+* Close Sublime Text. 
+* "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
+* Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
+* Restart Sublime Text.
+
+
+
 
 
 Use the included C++ custom build

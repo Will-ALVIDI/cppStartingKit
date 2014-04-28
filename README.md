@@ -44,7 +44,7 @@ But don't worry, as it is my primary tool for my journey to C++, I will do my be
 
 THE GUIDE
 =========
-This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending of your Sublime Text version or operating system. 
+This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending on your Sublime Text version or your operating system. 
 
 Install the package
 ==========================
@@ -58,28 +58,30 @@ Install the package
 
 Customize your Theme
 ====================
+If you use a default theme or something downloaded from the Internet you will surely need to tweak your configuration file. This next part is a set of few tips which help you to do it as easily as possible.
 
-**Locate your *.tmTheme**
+**Change your theme**
 
-If you want to tweak a default theme I recommend you to copy and rename it first in your `Sublime Text/Data/Packages/User` folder.
-* Default themes are located inside `Sublime Text/Packages/Color Scheme - Default.sublime-package`. 
+* Go to `Preferences > Color Scheme` menu.
+
+**Locate your theme configuration file**
+
+* Default themes are located inside `Sublime Text/Packages/Color Scheme - Default.sublime-package`. (see [How to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#manipulate-sublime-package-format)) 
 * User themes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
+
+If you want to tweak a default theme I recommend you to copy it and rename it in your `Sublime Text/Data/Packages/User` folder.
 
 **Retrieve a scope name**
 
 * Put your cursor under the scope you want to know the name.
 * Type `Ctrl + Alt + Shift + P`.
 
-**Explore your *.tmTheme**
+**Make a search**
 
 * Make a search by typing `Ctrl + F`.
 * Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
 
-**Change your theme**
-
-* Go to `Preferences > Color Scheme` menu.
-
-**Add a missing scope in your *.tmTheme**
+**Add a missing scope in your theme configuration file**
 
 If you are sure that the scope doesn't exist in your `*.tmTheme`, add the following lines and fill the fields correctly :
 
@@ -127,7 +129,7 @@ If you want to follow this process you have to put the main behavior at the bott
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
-# Manipulate *.sublime-package format
+# How to edit a *.sublime package
 
 `*.sublime-package` like `CCpp.sublime-package` are `*.zip` archive. If you want to modify files inside this package you have to follow these steps :
 * Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.

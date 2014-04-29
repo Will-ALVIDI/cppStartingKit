@@ -45,7 +45,7 @@ But don't worry, as it is my primary tool for my journey to C++, I will do my be
 THE GUIDE
 =========
 
-If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ Starting Kit** and the guide are for you.
+If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ Starting Kit** and this guide are for you.
 
 This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending on your version of Sublime Text and your operating system but a quick search with Internet should give you the answers. 
 

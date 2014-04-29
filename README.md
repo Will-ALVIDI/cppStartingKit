@@ -165,7 +165,7 @@ If you are sure that a scope is miising in your `*.tmTheme` file, which contain 
 # Use the C++ Starting Kit build system
 
 ## Prerequisite
-If you want to use the **C++ Starting Kit** build system you combine 5 elements :
+If you want to use the **C++ Starting Kit** build system you will need to combine 5 elements :
 * Install a compiler compatible with g++. In our case MinGW-w64 for x86 and x64 developments.
 * [Add your compiler to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path).
 * Restart your computer.

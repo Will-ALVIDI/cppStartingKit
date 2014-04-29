@@ -206,7 +206,7 @@ The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-
 * In `System variables` scroll down until you find `path`.
 * Then click edit.
 
-This will give you a list of vital folders for your system. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C`, to copy what is selected, then `Ctrl + V` to paste what you have selected) in a safe document to be able to bring everything back to his default state if necessary. 
+This will give you a list of vital folders for your system. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C`, to copy what is selected, then `Ctrl + V` to paste what you have copied) in a safe document to be able to bring everything back to his default state if necessary. 
 
 If you followed this guide from the beginning you have to add at the end of your system path, inside the field, a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
 
@@ -223,7 +223,7 @@ I recommend you to create your first user build system inside the user folder in
 * Go to `Sublime Text/Data/Packages/User` folder.
 * Or from Sublime Text by going to `Preferences > Browse Packages...` then go inside the `User` folder. 
 * Create a file with an easily recognizable name like `User - C++.sublime-build`.
-* Copy and paste the following, it is a copy of the **C++ Starting Kit** build system :
+* Copy and paste the following. It is a copy of the **C++ Starting Kit** build system :
 
 		{
 			"cmd": ["g++", "-Wall","*.cpp", "-I", "../header","-o", "${file_path}/${file_base_name}"],
@@ -241,25 +241,27 @@ I recommend you to create your first user build system inside the user folder in
 			]
 		}
 
-* Then activate this custom build system by going in the menu `Tools > Build System` and choose the `User - C++`.
+* Save the changes.
+* Then activate this custom build system by going in `Tools > Build System` menu and choose the `User - C++`.
 
 As the compiling processes could require an entire guide I will just detail the first lines which are the most important.
 
-* `"g++"` invoke `g++.exe`, the compiler.
+* `"g++"` call the launching of `g++.exe`, the compiler.
 * `"-Wall"`, for "warn all", will warn you for all errors.
 * `"*.cpp"` wil include all the `*.cpp` files stored in the same folder.
-* `"-I"`, for "include", and `"../header"` will include a folder called "header", one level above the current file in your project directory.
-* `"-o"`, for "output", followed by `"${file_path}/${file_base_name}"` will output your executable, a `*.exe` file, inside the current file path with your current file name as base.
+* `"-I"`, for "include", and `"../header"` will include a folder called "header", one level above the current file directory.
+* `"-o"`, for "output", followed by `"${file_path}/${file_base_name}"` will output your executable, a `*.exe` file, inside the current file path with your current file name as base name.
 
 **Build and Run by a command prompt**
 
 The commands inside the **C++ Starting Kit** are reproducible and testable inside a command prompt. Test your Sublime Text build systems this way before to adapt it for Sublime Text build systems.
 
 Few steps are necessary to do it :
-* Locate the folder where your main program is stored, press `Shift + Richt Click` then choose `Open command window here`. This will open a command prompt ready to work directly on your project directory and avoid you to do this manipulation by command line.
+* Locate the folder where your main program is stored.
+* Press `Shift + Richt Click` then choose `Open command window here`. This will open a command prompt ready to work directly on your project directory and avoid you to do this manipulation by the command line.
 * Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
 
-	g++ -Wall *.cpp -I ../header -o myProgramName.exe
+	**`g++ -Wall *.cpp -I ../header -o myProgramName.exe`**
 
 If you build a program with those command you will get as a result a `myProgramName.exe` file inside your folder and you can run it by typing his name inside the command prompt then pressing `Enter` or by a double clicking the file inside your working directory.
 

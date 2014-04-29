@@ -211,6 +211,8 @@ If you followed this guide from the beginning you have to add at the end of this
 * Then log off or restart your computer to apply the changes.
 
 ### Understand the build system
+
+**The basics**
 By default the build system is design as follow :
 
 	{
@@ -229,7 +231,7 @@ By default the build system is design as follow :
 		]
 	}
 
-I will just detail the first line which is the more important, I recommend you to check the documentation of Sublime Text and MinGW to customize it :
+I will just detail the first line which are the more important, I recommend you to check the documentation of Sublime Text and MinGW to customize it :
 
 * `"g++"` invoke g++.exe.
 * `"-Wall"` will warn you for all errors.
@@ -237,14 +239,19 @@ I will just detail the first line which is the more important, I recommend you t
 * `"-I"` and `"../header"` will include a folder called `header` one level above the current file in your project directory.
 * `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable "*.exe" in the current file path with your file name as a base.
 
-If you want to use g++ without any Sublime Text build system you can :
-* Open a command prompt where your main `*.cpp` is stored.
+To `Build` and `Run` the commands are `Ctrl + B` and `Ctrl + Shift + B`.
+
+**Go further**
+
+If you want to test g++ without any Sublime Text build system you can open a command prompt where your main `*.cpp` is stored.
 
 Locate the folder, `Shift + Richt Click`, then choose `Open command window here`.
-* Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
+
+Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
 
 `g++ -Wall *.cpp -I ../header -o myProgramName.exe`
 
+As a result you will get a `myProgramName.exe` inside your folder that you can run by typing his name inside the command prompt.
 
 # Sublime Text projects
 

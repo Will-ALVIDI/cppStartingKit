@@ -164,7 +164,7 @@ The entire document is organised like this, everything is documented as possible
 * Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
 * Restart Sublime Text.
 
-# Use the included C++ custom build system
+# Use the C++ Starting Kit build system
 
 ## Prerequisite
 If you want to use the **C++ Starting Kit** build system you have 5 things to do :

@@ -126,7 +126,7 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, which contain 
 
 ## What you need to know
 
-### Introduction to CCpp.tmLanguage
+### Introduction
 
 The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`)(not included). For **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :
 * `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).

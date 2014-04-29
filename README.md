@@ -271,13 +271,19 @@ Default commands for `Build` and `Run` with **C++ Starting Kit** build system ar
 * `Ctrl + B` to build your program.
 * `Ctrl + Shit + B` to run your program.
 
-# Sublime Text projects
-(To do)
 
-# Go further
+# Going further
 
 ## Plugins
 (To do)
 
-## Ressources and references
-(To do)
+### Sublime Text project management
+
+To learn about Sublime Text project management I recommend you [this tutorial](http://www.youtube.com/watch?v=Kr5ztsD3Yr4) which is a bit longer than other videos available in the Internet but it covers all the basics and necessary tips to a good start with this tool.
+
+### Regular expressions
+
+If you want to go further with your syntax definition I can recommend you 3 ressources which were useful for me for the development of **C++ Starting Kit** :
+* [Themeforest - Community blog](http://blog.themeforest.net/screencasts/regular-expressions-for-dummies/)
+* [RegExr by gSkinner](http://www.regexr.com/v1/)
+* [Regular-expressions.info](http://www.regular-expressions.info/)

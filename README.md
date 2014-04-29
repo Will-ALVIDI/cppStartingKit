@@ -232,7 +232,7 @@ By default the build system is design as follow :
 * `"g++"` invoke g++.exe.
 * `"-Wall"` will warn you for all errors.
 * `"*.cpp"` wil include every `*.cpp` file in the same folder.
-* `"-I"` and `"../header"` will include a folder called `header` one level above in your project directory.
+* `"-I"` and `"../header"` will include a folder called `header` one level above the current file in your project directory.
 * `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable "*.exe" in the current file path with your file name as a base.
 
 Those commands are the same as if you open a command prompt(`Start Menu`, in the search bar type `cmd` then choose `cmd.exe`) and you type the following :

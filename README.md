@@ -16,7 +16,7 @@ The main objective of this project is to **provide a complete starting kit and s
 **I have to mention two major things before to continue :**
 
 * First, **I'm really new in programming**. The first release of this package is the result of my first week of learning. My original goal is to learn C++ with a lightweight and flexible tool. A tool which allow me to customize my environment and let me control things like compiling.
-* The second thing I want to mention is, in my opinion, **this package is not yet ready for production**. Even if the main behaviors are ever described and seem to work correctly, I think it will demand you a certain investment before to make it fully functional for your an advanced or professional usage. 
+* The second thing I want to mention is, in my opinion, **this package is not yet ready for production**. Even if the main behaviors are ever described and seem to work correctly, I think it will demand you a certain investment before to make it fully functional for an advanced or professional usage. 
 
 As it is my primary tool for my learning of C++ I will do my best to make it fully functional as soon as possible.
 
@@ -48,7 +48,7 @@ If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ 
 
 If you are anyone else you can find tips to customize your Sublime Text environment.
 
-This guide covers the key points to start using Sublime Text 3 for C++ under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system. 
+This guide covers the key points to start using Sublime Text 3 for C++ projects under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system. 
 
 The informations provided in this guide should help you to understand the core of the **C++ Starting Kit** and how globally things work inside Sublime Text. 
 
@@ -116,18 +116,18 @@ If you use a default color scheme or something downloaded from the Internet you 
 
 A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
 
-Otherwise check the following, it is design as set of useful tips which will help you to customize your Sublime Text environment.
+Otherwise check the following. It is designed as set of useful tips which will help you to customize your Sublime Text environment.
 
 ### Locate your color scheme configuration file
 
-* Default color schemes are located inside the package `Sublime Text/Packages/Color Scheme - Default.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
-* User color schemes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
+* Default color schemes are located inside the `Sublime Text/Packages` folder in a file called `Color Scheme - Default.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
+* User color schemes are located in `Sublime Text/Data/Packages/User` folder as a `*.tmTheme` file.
 
 If you want to tweak a default color scheme I recommend you to copy and rename it in your `Sublime Text/Data/Packages/User` folder.
 
 ### Change your color scheme
 
-* Go to `Preferences > Color Scheme` menu.
+* Go to `Preferences > Color Scheme` menu then make your choice between `Color Scheme - Default` and `User` color schemes if you have one.
 
 ### Find a scope name
 
@@ -142,7 +142,7 @@ If you want to tweak a default color scheme I recommend you to copy and rename i
 
 ### Add a missing scope in your color scheme configuration file
 
-If you are sure that the scope doesn't exist in your `*.tmTheme`, which contain your color scheme, add the following lines and fill the fields between the tags(`<tag>Your specification</tag>`) correctly :
+If you are sure that a scope is miising in your `*.tmTheme` file, which contain your color scheme, add the following lines and fill corretly the fields between the tags(`<tag>Your specification</tag>`) :
 
 		<dict>
 			<key>name</key>
@@ -195,9 +195,9 @@ The second thing is to chosse the correct options for this specific installation
 * Now you need to [add MinGW-w64 to your system path]((https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path)).
 
 ### Add folders to your system path
-Add folders to your system path allow programs to invoke specific commands.
+Add folders to your system path allow your system to share programs which can be call by other programs.
 
-The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-w64/bin`folder, is required by the **C++ Starting Kit** build system and must be indicate to your system to allow his access by Sublime Text :
+The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-w64/bin`folder, is required by the **C++ Starting Kit** build system and must be available in your system path to allow Sublime Text to access it :
 
 * Go to your `Start Menu`.
 * Right click on `Computer` then select `Properties`.
@@ -206,9 +206,9 @@ The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-
 * In `System variables` scroll down until you find `path`.
 * Then click edit.
 
-This will give you a list of folders vital for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C` to copy what is selected then `Ctrl + V` to paste) in a safe document to be able to bring everything back to his default state if necessary. 
+This will give you a list of vital folders for your system. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C`, to copy what is selected, then `Ctrl + V` to paste what you have selected) in a safe document to be able to bring everything back to his default state if necessary. 
 
-If you followed this guide from the beginning you have to add at the end of this line, inside the field, a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
+If you followed this guide from the beginning you have to add at the end of your system path, inside the field, a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
 
 * Then log off or restart your computer to apply the changes.
 

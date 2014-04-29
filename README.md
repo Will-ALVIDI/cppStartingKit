@@ -48,7 +48,7 @@ If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ 
 
 If you are anyone else you can find tips which will help you to customize your Sublime Text environment.
 
-I made this project because I found really hard to start C++ with Sublime Text. Mainly because the native support is in my sense not really functional, the documentation not design for beginners and informations are rarely complete on forums and other ressources. 
+I made this project because I found really hard to start C++ with Sublime Text. Mainly because the native support is, in my opinion, not really functional, the documentation not design for beginners and too many things are involved and are not entirely covered by forums and other ressources. 
 
 I tried to collect every bit of useful informations from my own experience and centralised it in one major document.
 

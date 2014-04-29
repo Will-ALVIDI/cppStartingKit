@@ -49,7 +49,7 @@ If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ 
 
 I tried to collect every bit of useful informations from my own starting and give it as a reference guide. 
 
-This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending on your version of Sublime Text and your operating system and a quick search with Internet should give you the answers. 
+This guide covers the management of this package with Sublime Text 3 under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system and a quick search with Internet should give you the answers. 
 
 The informations provided in this guide should help you to understand the core of the syntax definition provided by **C++ Starting Kit** and how globally things work inside Sublime Text. 
 
@@ -191,6 +191,22 @@ The second thing is to chosse the correct options for this specific installation
 * Now you need to [add MinGW to your system path]((https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path)).
 
 ### Add folders to your system path
+Add folders to your system path allow programs to invoke specific commands.
+
+In the case of MinGW -64 the command `g++` invoked by the **C++ Starting Kit** build system, which is in reality `g++.exe`, must be indicate to your system to allow Sublime Text to call it when it compile your programs.
+
+* Go to your `Start Menu`.
+* Right click on `Computer` then select `Properties`.
+* On the left side choose `Advanced system settings`.
+* Go to the `Advanced` tab then click on `Envrironment Variables`.
+* In `System variable` scroll down until you find `path`.
+* Then click edit.
+
+This will give you a list of folders userful for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, `Ctrl + C` to copy the entire line then `Ctrl + V` in a new document) in a safe document to be able to access it or relaunch it from his default state if necessary. 
+
+If you followed this guide from the beginning you have to add at the a semi colon `;` followed by `C:/MinGW/x64/mingw64/bin`.
+
+* Then log off or restart your computer to apply the changes.
 
 ### Understand the build system
 

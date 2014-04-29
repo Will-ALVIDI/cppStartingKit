@@ -237,7 +237,10 @@ I will just detail the first line which is the more important, I recommend you t
 * `"-I"` and `"../header"` will include a folder called `header` one level above the current file in your project directory.
 * `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable "*.exe" in the current file path with your file name as a base.
 
-Those commands are the same as if you open a command prompt(`Start Menu`, in the search bar type `cmd` then choose `cmd.exe`) and you type the following :
+If you want to use g++ without any Sublime Text build system you can :
+* Open a command prompt where your main `*.cpp` is stored.
+Locate the folder, `Shift + Richt Click`, then choose `Open command window here`.
+* Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
 
 `g++ -Wall *.cpp -I ../header -o myProgramName.exe`
 

@@ -263,7 +263,7 @@ Few steps are necessary to do it :
 
 	**`g++ -Wall *.cpp -I ../header -o myProgramName.exe`**
 
-If you build a program with those command you will get as a result a `myProgramName.exe` file inside your folder and you can run it by typing his name inside the command prompt then pressing `Enter` or by a double clicking the file inside your working directory.
+If you build a program with those commands you will get as a result a `myProgramName.exe` file inside your folder that you can `Run` by typing his name inside the command prompt then pressing `Enter` or by a double click on the file inside your working directory.
 
 ### Use the C++ Starting Kit build system
 

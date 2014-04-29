@@ -124,8 +124,8 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, which contain 
 
 ### Introduction to CCpp.tmLanguage
 
-The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`). Both are contained in the CCpp.sublime-package.
-In **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :
+The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`). Both are part of the **C++ Starting Kit** package.
+To be able to quickly get a result, only the necessary pieces of code were modified :
 * `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
 * `C++.sublime-build`, which embed the build system, was customized and renamed in [`CCpp.sublime-build`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-build).
 * `C++.sublime-settings`, which specifies the supported file types, was just renamed in [`CCpp.sublime-settings`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-settings). 

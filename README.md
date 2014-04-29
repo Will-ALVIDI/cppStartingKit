@@ -7,7 +7,7 @@ Go to [The Guide](https://github.com/kodLite/cppStartingKit#the-guide)
 * C, C++ and C++11 combined and improved syntax highlighting support.
 * Custom C++ build system for g++ compiler.
 
-**It is highly recommended to read the Philosophy section just below before to install and use this package.**
+**It is highly recommended to read the [Philosophy](https://github.com/kodLite/cppStartingKit#philosophy) and the [Guide](https://github.com/kodLite/cppStartingKit#the-guide) before to install and use this package.**
 
 ## Philosophy
 The main objective of this project is to **provide a real starting kit for beginners with C++ and Sublime Text** including :

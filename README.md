@@ -112,22 +112,22 @@ If you want to follow this process you have to put the main behavior at the bott
 
 # Customize your color scheme
 
-If you use a default color scheme or something downloaded from the Internet and you want to use the **C++ Starting Kit** you will have to manage your scopes inside your configuration file(`*.tmTheme`).
+If you use a default color scheme or something downloaded from the Internet you will have to add [**C++ Starting Kit** scopes](https://github.com/kodLite/cppStartingKit#c-starting-kit-scope-list) inside your `*.tmTheme` configuration file.
 
 A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
 
-Otherwise check the following, it's a set of useful tips which will help to customize your Sublime Text environment.
-
-### Change your color scheme
-
-* Go to `Preferences > Color Scheme` menu.
+Otherwise check the following, it is design as set of useful tips which will help you to customize your Sublime Text environment.
 
 ### Locate your color scheme configuration file
 
 * Default color schemes are located inside the package `Sublime Text/Packages/Color Scheme - Default.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
 * User color schemes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
 
-If you want to tweak a default color scheme I recommend you to copy it and rename it in your `Sublime Text/Data/Packages/User` folder.
+If you want to tweak a default color scheme I recommend you to copy and rename it in your `Sublime Text/Data/Packages/User` folder.
+
+### Change your color scheme
+
+* Go to `Preferences > Color Scheme` menu.
 
 ### Find a scope name
 

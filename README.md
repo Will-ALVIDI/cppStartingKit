@@ -197,7 +197,7 @@ The second thing is to chosse the correct options for this specific installation
 ### Add folders to your system path
 Add folders to your system path allow programs to invoke specific commands.
 
-In the case of MinGW-w64 the command `g++`, invoked by the **C++ Starting Kit** build system, which is in reality `g++.exe`, must be indicate to your system to allow Sublime Text to call it when it compile your programs.
+The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-w64/bin`folder, is required by the **C++ Starting Kit** build system and must be indicate to your system to allow his access by Sublime Text :
 
 * Go to your `Start Menu`.
 * Right click on `Computer` then select `Properties`.

@@ -12,7 +12,7 @@ The main objective of this project is to provide a fully functional and self-con
 * A syntax definition which gives you the flexibility to make precise customizations to your syntax highlighting.
 * An associated theme which includes all the new scopes. (see [Oasis Theme](https://github.com/kodLite/Oasis-Theme))
 * An intelligible build system.
-* A relevant documentation for a quick start and an accessible maintenance.
+* A relevant documentation for a quick start and an accessible maintenance.(see [The Guide](https://github.com/kodLite/cppStartingKit#the-guide))
 
 **I have to mention two major things before to continue :**
 

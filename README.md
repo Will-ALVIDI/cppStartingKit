@@ -217,11 +217,11 @@ If you followed this guide from the beginning you have to add at the end of this
 
 **Introduction**
 
-Build systems in Sublime Text are project specific. It is hard to make one which covers every type of project you will do. The **C++ Starting Kit** provide a build system and the following documentation as a starting point not an universal solution.
+Build systems in Sublime Text are project specific. It is hard to make one which covers every type of project you will do. The **C++ Starting Kit** provide a build system and the following documentation as a starting point not as an universal solution.
 
-I recommend you to create your personal build system inside your Sublime `Text/Data/Packages/User` folder :
+I recommend you to create your personal build system inside your `Sublime Text/Data/Packages/User` folder :
 
-* Go to `Text/Data/Packages/User` folder or inside Sublime Text `Preferences > Browse Packages...` then go inside the `User` folder. 
+* Go to `Sublime Text/Data/Packages/User` folder or from Sublime Text by going to `Preferences > Browse Packages...` then go inside the `User` folder. 
 * Create a file with an easily recognizable name like `User - C++.sublime-build`.
 * Copy and paste the following, it is a copy of the **C++ Starting Kit** build system.
 
@@ -241,9 +241,9 @@ I recommend you to create your personal build system inside your Sublime `Text/D
 			]
 		}
 
-* Then you have to activate your custom build system by going to `Tools > Build System > User - C++`.
+* Then activate your custom build system by going to `Tools > Build System > User - C++`.
 
-I will just detail the first line which are the most important.
+I will just detail the first lines which are the most important.
 
 * `"g++"` invoke g++.exe.
 * `"-Wall"` will warn you for all errors.
@@ -251,19 +251,17 @@ I will just detail the first line which are the most important.
 * `"-I"` and `"../header"` will include a folder called `header` one level above the current file in your project directory.
 * `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable, a `*.exe` file, inside the current file path with your file name as a base.
 
-To `Build` and `Run` the commands are `Ctrl + B` and `Ctrl + Shift + B`.
+**Build and Run by a command prompt**
 
-**Build by a command prompt**
+The commands inside the `C++ Starting Kit` are reproducible and testable inside a command prompt. Test your Sublime Text build System this way before to go on greater projects.
 
-If you want to test g++ without any Sublime Text build system you can open a command prompt where your main `*.cpp` is stored.
-
-Locate the folder, `Shift + Richt Click`, then choose `Open command window here`.
-
-Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
+Few steps are necessary to do it :
+* Locate the folder where you main program is, press `Shift + Richt Click`, then choose `Open command window here`. This will open a command prompt ready to work on you project directory and avoid the save manipulation by the command prompt.
+* Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
 
 `g++ -Wall *.cpp -I ../header -o myProgramName.exe`
 
-As a result you will get a `myProgramName.exe` inside your folder that you can run by typing his name inside the command prompt and p[ress `Enter`.
+As a result you will get a `myProgramName.exe` file inside your folder and you can run it by typing his name inside the command prompt then press `Enter`.
 
 # Sublime Text projects
 

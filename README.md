@@ -133,6 +133,18 @@ To keep a flexible and easily maintainable system it was necessary to analyze, c
 
 The greatest part of the changes are in the [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage). Now it is organized and documented to facilitate his approach and his maintenance. Functional pieces like comments, quoted strings or preprocessor modules are untouched.
 
+### Structure of CCpp.tmLanguage
+
+The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
+
+For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the "block detection".
+
+If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
+
+The entire document is organised like this, everything is documented as possible. This allow you to quickly understand the system and easily add functionalities if necessary.
+
+![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
+
 ### How to edit a *.sublime package
 
 `*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside those packages you have to follow these steps :
@@ -145,18 +157,6 @@ The greatest part of the changes are in the [`CCpp.tmLanguage`](https://github.c
 * "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
 * Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
 * Restart Sublime Text.
-
-### Very important
-
-The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
-
-For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the "block detection".
-
-If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
-
-The entire document is organised like this, everything is documented as possible. This allow you to quickly understand the system and easily add functionalities if necessary.
-
-![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
 # Use the included C++ custom build
 

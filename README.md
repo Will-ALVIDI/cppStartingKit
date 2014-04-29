@@ -8,7 +8,7 @@ C++ Starting Kit for Sublime Text
 
 ## Philosophy
 The main objective of this project is to **provide a complete starting kit and starting point for beginners with C++ and Sublime Text** including :
-* A syntax definition which gives you the flexibility to make precise customizations to your syntax highlighting. (see the [Preview](https://github.com/kodLite/cppStartingKit#preview) of the **C++ Starting Kit**)
+* A syntax definition which gives you the flexibility to make precise customizations to your syntax highlighting. (see the [Preview](https://github.com/kodLite/cppStartingKit#preview))
 * An associated theme which includes all the new scopes. (see [Oasis Theme](https://github.com/kodLite/Oasis-Theme))
 * An intelligible build system. (see the [C++ Starting Kit build system](https://github.com/kodLite/cppStartingKit#use-the-c-starting-kit-build-system))
 * A relevant documentation for a quick start and an accessible maintenance.(see [The Guide](https://github.com/kodLite/cppStartingKit#the-guide))
@@ -273,6 +273,9 @@ Default commands for `Build` and `Run` with **C++ Starting Kit** build system ar
 
 
 # Going further
+
+### Plugins
+Plugins are the core of Sublime Text and I definitely recommend you to visit regularly [Package Control - Official Website](https://sublime.wbond.net/) to discover and test amazing packages provided by the community. 
 
 ### Sublime Text project management
 

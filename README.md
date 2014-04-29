@@ -176,7 +176,7 @@ If you want to use the **C++ Starting Kit** build system you have 5 things to do
 ### Install MinGW-w64
 * Go to the MinGW-w64 project homepage at [http://mingw-w64.sourceforge.net/](http://mingw-w64.sourceforge.net/)
 
-This should give you the page below then click on the download page where it is highlighted on the next image. 
+This should give you the page below then click on the download page highlighted on the next image. 
 
 ![MinGW-w64 project main page](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-main-page-marked.jpg?raw=true)
 
@@ -186,7 +186,7 @@ This should give you the page below then click on the download page where it is 
 
 * Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major thing to take care of.
 
-You have to remember the path where you will install it because it will be necessary to [add it to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path). Otherwise the build system will not recognize the commands invoked by the C++ Starting Kit build systen. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding an new folder like `C:\MinGW\x86`.
+You have to remember the path where you will install it because it will be necessary to [add it to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path). Otherwise the build system will not recognize the commands invoked by the C++ Starting Kit build system. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding an new folder like `C:\MinGW\x86`.
 
 The second thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is.
 
@@ -207,7 +207,7 @@ In the case of MinGW-w64 the command `g++` invoked by the **C++ Starting Kit** b
 * In `System variables` scroll down until you find `path`.
 * Then click edit.
 
-This will give you a list of folders userful for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, `Ctrl + C` to copy the entire line then `Ctrl + V` to paste) in a safe document to be able to access it or bring it back to his default state if necessary. 
+This will give you a list of folders useful for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, `Ctrl + C` to copy the entire line then `Ctrl + V` to paste) in a safe document to be able to access it or bring it back to his default state if necessary. 
 
 If you followed this guide from the beginning you have to add at the end of this line a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
 
@@ -215,9 +215,14 @@ If you followed this guide from the beginning you have to add at the end of this
 
 ### Understand the C++ Starting Kit build system
 
-**The basics**
+**Introduction**
 
-By default the **C++ Starting Kit** build system is design as follow :
+Build systems in Sublime Text are project specific. It is hard to make one which covers every type of project you will do. The **C++ Starting Kit** provide a build system and the following documentation as a starting point not an universal solution.
+
+I recommend you to create your personal build system inside your Sublime `Text/Data/Packages/User` folder :
+* Go to `Text/Data/Packages/User` folder or inside Sublime Text `Preferences > Browse Packages...` then go inside the `User` folder. 
+* Create a file with an easily recognizable name like `User - C++.sublime-build`.
+* Copy and paste the following.
 
 	{
 		"cmd": ["g++", "-Wall","*.cpp", "-I", "../header","-o", "${file_path}/${file_base_name}"],
@@ -234,8 +239,10 @@ By default the **C++ Starting Kit** build system is design as follow :
 			},
 		]
 	}
+	
+* Then you have to activate your custom build system by going to `Tools > Build System > User - C++`.
 
-I will just detail the first line which are the more important.
+I will just detail the first line which are the most important.
 
 * `"g++"` invoke g++.exe.
 * `"-Wall"` will warn you for all errors.
@@ -245,7 +252,7 @@ I will just detail the first line which are the more important.
 
 To `Build` and `Run` the commands are `Ctrl + B` and `Ctrl + Shift + B`.
 
-**Go further**
+**Build by a command prompt**
 
 If you want to test g++ without any Sublime Text build system you can open a command prompt where your main `*.cpp` is stored.
 

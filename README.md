@@ -49,7 +49,7 @@ If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ 
 
 This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending on your version of Sublime Text and your operating system but a quick search with Internet should give you the answers. 
 
-The informations provided in this guide should help you to understand the core of the syntax definition and how globally things work inside Sublime Text. 
+The informations provided in this guide should help you to understand the core of the syntax definition provided by **C++ Starting Kit**and how globally things work inside Sublime Text. 
 
 # Install the package
 
@@ -68,7 +68,7 @@ If you use a default color scheme or something downloaded from the Internet and 
 
 A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
 
-Otherwise check the next part, it's a set of useful tips which will help to customize your Sublime Text environment for **C++ Starting Kit**.
+Otherwise check the following, it's a set of useful tips which will help to customize your Sublime Text environment.
 
 ### Change your color scheme
 
@@ -113,7 +113,7 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, which contin y
 
 #Customize your syntax definition
 
-## About CCpp.tmLanguage
+## What you need to know
 
 The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`).
 In **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :

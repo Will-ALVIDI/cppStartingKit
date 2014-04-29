@@ -55,7 +55,7 @@ I made this project because I found really hard to start C++ with Sublime Text. 
 
 I tried to collect every bit of useful informations from my own experience and centralised it in one major document.
 
-This guide covers the management of this package with Sublime Text 3 under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system. 
+This guide covers the key points to start using Sublime Text 3 for C++ under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system. 
 
 The informations provided in this guide should help you to understand the core of the **C++ Starting Kit** and how globally things work inside Sublime Text. 
 

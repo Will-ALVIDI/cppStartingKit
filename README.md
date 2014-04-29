@@ -22,7 +22,7 @@ The main objective of this project is to **provide a real starting kit for begin
 But don't worry, as it is my primary tool for my journey to C++, I will do my best to update it quickly and make it fully functional as soon as possible.
 
 ## Preview
-**Quick overview. ([Oasis Theme](https://github.com/kodLite/Oasis-Theme) not included)**
+**[Oasis Theme](https://github.com/kodLite/Oasis-Theme) not included**
 
 ![C++ Starting Kit Standard behavior](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/standard-behavior.jpg?raw=true)
 
@@ -49,11 +49,11 @@ If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ 
 
 I tried to collect every bit of useful informations from my own starting and give it as a reference guide. 
 
-This guide covers the management of this package with Sublime Text 3 under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system and a quick search with Internet should give you the answers. 
+This guide covers the management of this package with Sublime Text 3 under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system. 
 
 The informations provided in this guide should help you to understand the core of the **C++ Starting Kit** and how globally things work inside Sublime Text. 
 
-# Install the package
+# Install C++ Starting Kit
 
 ### Manually
 
@@ -112,10 +112,15 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, which contain 
 			</dict>
 		</dict>
 
+### C++ Starting Kit scope list
+
+(To do)
 
 #Customize your syntax definition
 
 ## What you need to know
+
+### Introduction to CCpp.tmLanguage
 
 The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`).
 In **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :
@@ -128,24 +133,7 @@ To keep a flexible and easily maintainable system it was necessary to analyze, c
 
 The greatest part of the changes are in the [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage). Now it is organized and documented to facilitate his approach and his maintenance. Functional pieces like comments, quoted strings or preprocessor modules are untouched.
 
-## Very important
-
-The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
-
-For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the "block detection".
-
-If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
-
-The entire document is organised like this, everything is documented as possible. This allow you to quickly understand the system and easily add functionalities if necessary.
-
-![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
-
-
-## C++ Starting Kit scope list
-
-(To do)
-
-## How to edit a *.sublime package
+### How to edit a *.sublime package
 
 `*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside those packages you have to follow these steps :
 * Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
@@ -157,6 +145,18 @@ The entire document is organised like this, everything is documented as possible
 * "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
 * Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
 * Restart Sublime Text.
+
+### Very important
+
+The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
+
+For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the "block detection".
+
+If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
+
+The entire document is organised like this, everything is documented as possible. This allow you to quickly understand the system and easily add functionalities if necessary.
+
+![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
 # Use the included C++ custom build
 

@@ -160,7 +160,7 @@ The entire document is organised like this, everything is documented as possible
 * Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
 * Restart Sublime Text.
 
-# Use the included C++ custom build
+# Use the included C++ custom build system
 
 ## Prerequisite
 If you want to use the **C++ Starting Kit** build system you have 5 things to do :
@@ -211,5 +211,37 @@ If you followed this guide from the beginning you have to add at the end of this
 * Then log off or restart your computer to apply the changes.
 
 ### Understand the build system
+By default the build system is design as follow :
+
+	{
+		"cmd": ["g++", "-Wall","*.cpp", "-I", "../header","-o", "${file_path}/${file_base_name}"],
+		"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+		"working_dir": "${file_path}",
+		"selector": "source.c++",
+		"shell" : true,
+	
+		"variants":
+		[
+			{
+				"cmd": ["start","cmd", "/k","${file_path}/${file_base_name}"],
+				"name": "Run"
+			},
+		]
+	}
+
+* `"g++"` invoke g++.exe.
+* `"-Wall"` will warn you for all errors.
+* `"*.cpp"` wil include every `*.cpp` file in the same folder.
+* `"-I"` and `"../header"` will include a folder called `header` one level above in your project directory.
+* `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable "*.exe" in the current file path with your file name as a base.
+
+Those commands are the same as if you open a command prompt(`Start Menu`, in the search bar type `cmd` then choose `cmd.exe`) and you type the following :
+
+`g++ -Wall *.cpp -I ../header -o myProgramName.exe`
+
+
+# Sublime Text projects
 
 ### Use the build system
+* `Ctrl + B` to build your program.
+* `Ctrl + Shit + B` to run your program.

@@ -249,7 +249,7 @@ I will just detail the first line which are the most important.
 * `"-Wall"` will warn you for all errors.
 * `"*.cpp"` wil include every `*.cpp` file in the same folder.
 * `"-I"` and `"../header"` will include a folder called `header` one level above the current file in your project directory.
-* `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable "*.exe" in the current file path with your file name as a base.
+* `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable, a `*.exe` file, inside the current file path with your file name as a base.
 
 To `Build` and `Run` the commands are `Ctrl + B` and `Ctrl + Shift + B`.
 

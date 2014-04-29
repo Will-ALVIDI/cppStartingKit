@@ -8,7 +8,7 @@ C++ Starting Kit for Sublime Text
 **It is highly recommended to read the Philosophy section just below before to install and use this package.**
 
 ## Philosophy
-The main objective of this project is to provide a fully functional and self-contained starting toolkit for beginners(like me) with C++ and Sublime Text including :
+The main objective of this project is to **provide a real starting kit for beginners with C++ and Sublime Text** including :
 * A syntax definition which gives you the flexibility to make precise customizations to your syntax highlighting.
 * An associated theme which includes all the new scopes. (see [Oasis Theme](https://github.com/kodLite/Oasis-Theme))
 * An intelligible build system.

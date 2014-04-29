@@ -48,13 +48,13 @@ If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ 
 
 If you are anyone else you can find tips to customize your Sublime Text environment.
 
-I created this project because as a beginner in programming I found really hard to start C++ with Sublime Text. Mainly because the native support is, in my opinion, not really functional, the documentation is not designed for beginners and too many things are interlocked and covered with difficulties by forums and other ressources. 
-
-I tried to collect every bit of useful informations from my own experience and centralised it in this document.
-
 This guide covers the key points to start using Sublime Text 3 for C++ under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system. 
 
 The informations provided in this guide should help you to understand the core of the **C++ Starting Kit** and how globally things work inside Sublime Text. 
+
+I created this project because as a beginner in programming I needed a digestible and intelligible tool and documentation to begin my learning of C++. The native support is, in my opinion, not really functional, the documentation is not designed for beginners and too many things are interlocked and covered with difficulties by forums and other ressources. 
+
+I hope you will find relevant informations to suit to your needs.
 
 # Install C++ Starting Kit
 

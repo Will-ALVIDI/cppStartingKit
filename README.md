@@ -186,7 +186,7 @@ This should give you the page below then click on the download page highlighted 
 
 * Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major thing to take care of.
 
-You have to remember the path where you will install it because it will be necessary to [add it to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path). Otherwise the build system will not recognize the commands invoked by the C++ Starting Kit build system. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding an new folder like `C:\MinGW\x86`.
+You have to remember the path where you will install it because it will be necessary to [add it to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path). Otherwise the build system will not recognize the commands invoked by the **C++ Starting Kit build system**. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding a new folder like `C:\MinGW\x86`.
 
 The second thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is.
 
@@ -207,9 +207,9 @@ In the case of MinGW-w64 the command `g++` invoked by the **C++ Starting Kit** b
 * In `System variables` scroll down until you find `path`.
 * Then click edit.
 
-This will give you a list of folders useful for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, `Ctrl + C` to copy the entire line then `Ctrl + V` to paste) in a safe document to be able to access it or bring it back to his default state if necessary. 
+This will give you a list of folders useful for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C` to copy what is selected then `Ctrl + V` to paste) in a safe document to be able to access it or bring it back to his default state if necessary. 
 
-If you followed this guide from the beginning you have to add at the end of this line a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
+If you followed this guide from the beginning you have to add at the end of this line, inside the field, a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
 
 * Then log off or restart your computer to apply the changes.
 
@@ -217,13 +217,14 @@ If you followed this guide from the beginning you have to add at the end of this
 
 **Introduction**
 
-Build systems in Sublime Text are project specific. It is hard to make one which covers every type of project you will do. The **C++ Starting Kit** provide a build system and the following documentation as a starting point not as an universal solution.
+Build systems in Sublime Text are project specific. It is hard to make one which covers every type of project you will do. The **C++ Starting Kit** provides a build system and the following documentation as a starting point, not as an universal solution.
 
-I recommend you to create your personal build system inside your `Sublime Text/Data/Packages/User` folder :
+I recommend you to create your own first build system inside the user folder in Sublime Text :
 
-* Go to `Sublime Text/Data/Packages/User` folder or from Sublime Text by going to `Preferences > Browse Packages...` then go inside the `User` folder. 
+* Go to `Sublime Text/Data/Packages/User` folder.
+* Or from Sublime Text by going to `Preferences > Browse Packages...` then go inside the `User` folder. 
 * Create a file with an easily recognizable name like `User - C++.sublime-build`.
-* Copy and paste the following, it is a copy of the **C++ Starting Kit** build system.
+* Copy and paste the following, it is a copy of the **C++ Starting Kit** build system :
 
 		{
 			"cmd": ["g++", "-Wall","*.cpp", "-I", "../header","-o", "${file_path}/${file_base_name}"],
@@ -241,22 +242,22 @@ I recommend you to create your personal build system inside your `Sublime Text/D
 			]
 		}
 
-* Then activate your custom build system by going to `Tools > Build System > User - C++`.
+* Then activate your custom build system by going, in this case, to `Tools > Build System > User - C++`.
 
 I will just detail the first lines which are the most important.
 
-* `"g++"` invoke g++.exe.
+* `"g++"` invoke g++.exe, the compiler.
 * `"-Wall"` will warn you for all errors.
-* `"*.cpp"` wil include every `*.cpp` file in the same folder.
+* `"*.cpp"` wil include all the `*.cpp` files stored in the same folder.
 * `"-I"` and `"../header"` will include a folder called `header` one level above the current file in your project directory.
 * `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable, a `*.exe` file, inside the current file path with your file name as a base.
 
 **Build and Run by a command prompt**
 
-The commands inside the `C++ Starting Kit` are reproducible and testable inside a command prompt. Test your Sublime Text build System this way before to go on greater projects.
+The commands inside the `C++ Starting Kit` are reproducible and testable inside a command prompt. Test your Sublime Text build systems this way before to adapt it for Sublime Text build system.
 
 Few steps are necessary to do it :
-* Locate the folder where you main program is, press `Shift + Richt Click`, then choose `Open command window here`. This will open a command prompt ready to work on you project directory and avoid the save manipulation by the command prompt.
+* Locate the folder where you main program is stored, press `Shift + Richt Click` then choose `Open command window here`. This will open a command prompt ready to work directly on you project directory and avoid you to do this manipulation by command line.
 * Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
 
 `g++ -Wall *.cpp -I ../header -o myProgramName.exe`
@@ -264,6 +265,7 @@ Few steps are necessary to do it :
 As a result you will get a `myProgramName.exe` file inside your folder and you can run it by typing his name inside the command prompt then press `Enter`.
 
 ### Use the C++ Starting Kit build system
+
 Default commands for `Build` and `Run` are :
 * `Ctrl + B` to build your program.
 * `Ctrl + Shit + B` to run your program.

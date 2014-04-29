@@ -160,15 +160,30 @@ The entire document is organised like this, everything is documented as possible
 
 ## Prerequisite
 If you want to use the **C++ Starting Kit** build system you have 5 things to do :
-* Install MinGW, in our case MinGW 64 for x86 and x64 developments.
-* Add MinGW to your system path.
-* Restart your computer
-* Understand how the build system work
-* Know how to use the build system
+* Install a compiler compatible with g++. In our case MinGW -64 for x86 and x64 developments.
+* Add your compiler to your system path.
+* Restart your computer.
+* Understand how the build system work.
+* Know how to use the build system.
 
-### Install MinGW
-*Go to the MinGW project homepage at [http://mingw-w64.sourceforge.net/](http://mingw-w64.sourceforge.net/)
+### Install MinGW -64
+* Go to the MinGW -64 project homepage at [http://mingw-w64.sourceforge.net/](http://mingw-w64.sourceforge.net/)
 
+This should give you the page below then click on the download page where it is highlighted on the next image. 
+
+![MinGW 64 project main page](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-main-page-marked.jpg?raw=true)
+
+* To keep things easy, on the download page, get **the installer**, highlighted on the next image. This should give you a file called `mingw-builds-install.exe`.
+
+![MinGW 64 project download page](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-download-page-marked.jpg?raw=true)
+
+* Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major thing to take care of.
+
+You have to remember the path where you will install it because it will be necessary to [add it to your path](). Otherwise the build system will not recognize the commands you will invoke. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding an new folder like `C:\MinGW\x86`.
+
+The second thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is.
+
+![MinGW 64 project options](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-install-options-marked.jpg?raw=true)
 
 ### Add MinGW to your system path
 

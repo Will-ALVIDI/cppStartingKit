@@ -5,7 +5,7 @@ C++ Starting Kit for Sublime Text
 * C, C++ and C++11 combined and improved syntax highlighting support.
 * Custom C++ build system for g++ compiler.
 
-**/!\ It is highly recommended to read the Philosophy section just below before to install and use this package. /!\**
+**It is highly recommended to read the Philosophy section just below before to install and use this package.**
 
 ## Philosophy
 The main objective of this project is to provide a fully functional and self-contained starting toolkit for beginners(like me) with C++ and Sublime Text including :
@@ -16,7 +16,7 @@ The main objective of this project is to provide a fully functional and self-con
 
 **I have to mention two major things before to continue :**
 
-* First, I'm really new in the huge world of programming. The first release of this package is the result of my first week of learning. My original goal is to learn C++ with a lightweight and flexible tool. A tool which allow me to customize my environment and let me control things like compiling. This was not an easy task because of the huge amount of solutions available out there. Finally Sublime Text seems to suit pretty well to my needs with his reasonable learning curve. 
+* First, **I'm really new in programming**. The first release of this package is the result of my first week of learning. My original goal is to learn C++ with a lightweight and flexible tool. A tool which allow me to customize my environment and let me control things like compiling. This was not an easy task because of the huge amount of solutions available out there. Finally Sublime Text seems to suit pretty well to my needs with his reasonable learning curve. 
 * The second thing I want to mention is, in my opinion, **this package is not ready for production**. Even if the main behaviors are ever described and seem to work correctly, I think it will demand you a certain investment before to make it fully functional for your professional environment. 
 
 But don't worry, as it is my primary tool for my journey to C++, I will do my best to update it quickly and make it fully functional as soon as possible.
@@ -128,11 +128,13 @@ The greatest part of the changes are in the [`CCpp.tmLanguage`](https://github.c
 
 ## Very important
 
-The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code are added to respond to avoid undesirable behavior.
+The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code are added to add functionnalities and avoid undesirable behaviors.
 
 For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the "block detection".
 
 If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
+
+Everything in this file is organised like this.
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 

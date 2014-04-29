@@ -175,7 +175,7 @@
 			<string>close.angle.bracket.ccpp</string>
 		</dict>
 <!---------------------------------------------------
-	Period and Coma - CCpp
+	Period - CCpp
 ----------------------------------------------------->	
 		<dict>
 			<key>match</key>
@@ -183,6 +183,9 @@
 			<key>name</key>
 			<string>period.ccpp</string>
 		</dict>
+<!---------------------------------------------------
+	Coma - CCpp
+----------------------------------------------------->	
 		<dict>
 			<key>match</key>
 			<string>\,</string>
@@ -196,7 +199,7 @@
 			<key>match</key>
 			<string>\;+(?=.*;)</string>
 			<key>name</key>
-			<string>semi_colon.block.ccpp</string>
+			<string>semi_colon.ccpp</string>
 		</dict>
 <!---------------------------------------------------
 	Semi colon End of Line - CCpp
@@ -464,31 +467,31 @@
 			<string>support.type.mac-classic.c</string>
 		</dict>
 <!---------------------------------------------------
-	Support Function - CCpp
+	Function Support - CCpp
 ----------------------------------------------------->	
 		<dict>
 			<key>match</key>
-			<string>(?&lt;=\s|\.)\w+(?=\()</string>
+			<string>(?&lt;=class|wchar_t|nullptr_t)\s\w+</string>
 			<key>name</key>
-			<string>support.function.any-method.ccpp</string>
+			<string>function.support.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\w+(?=\()</string>
+			<key>name</key>
+			<string>function.support.ccpp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=\.)\w+(?=[^\w|\.])</string>
 			<key>name</key>
-			<string>support.function.any-method.ccpp</string>
+			<string>function.support.ccpp</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(\w+\:\:\w+)\b</string>
 			<key>name</key>
-			<string>entity.name.function.ccpp</string>
-		</dict>
-		<dict>
-			<key>match</key>
-			<string>(?&lt;=class|wchar_t|nullptr_t)\s\w+</string>
-			<key>name</key>
-			<string>entity.name.function.ccpp</string>
+			<string>function.support.ccpp</string>
 		</dict>
 <!--------------------------------------
 	String Quoted Double - C

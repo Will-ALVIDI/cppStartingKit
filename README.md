@@ -72,7 +72,11 @@ The informations provided in this guide should help you to understand the core o
 
 ### Introduction
 
-The syntax definition, mainly define by a `*.tmLanguage` configuration file in Sublime Text, allow you to customize your syntax highlighting by tweaking your color scheme, generally a `*.tmTheme` file(not included in **C++ Starting Toolkit** package). 
+`*.sublime-package` inside your `Sublime Text/Packages` folder contains specific language definitions as well as default theme(`Theme - Default.sublime-package`) and default color schemes(`Color Scheme - Default.sublime-package`).
+
+Languages are mainly define by a configuration file, `*.tmLanguage`, inside those `*.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package))
+
+### Global Structure of CCpp.tmLanguage
 
 To get a quick result in the **C++ Starting Kit** development only the necessary changes were made :
 * `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
@@ -84,7 +88,7 @@ To keep a flexible and easily maintainable system it was necessary to analyze, c
 
 The greatest part of the changes are in the [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage). Now it is organized and documented to facilitate his approach and his maintenance. Functional pieces like comments, quoted strings or preprocessor modules are untouched.
 
-### Structure of CCpp.tmLanguage
+### Logic of CCpp.tmLanguage
 
 The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
 

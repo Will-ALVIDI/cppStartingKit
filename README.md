@@ -74,7 +74,7 @@ I hope you will find relevant informations to suit to your needs.
 
 `*.sublime-package` inside your `Sublime Text/Packages` folder contains specific language definitions as well as the default theme, `Theme - Default.sublime-package`, and the default color schemes, `Color Scheme - Default.sublime-package`.
 
-Syntax definitions are mainly define by a configuration file, `*.tmLanguage`, inside those `*.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package) just below)
+Syntax definitions are mainly define by a configuration file, `*.tmLanguage`, inside those `*.sublime-package`.
 
 ### How to edit a *.sublime package
 
@@ -93,7 +93,7 @@ Syntax definitions are mainly define by a configuration file, `*.tmLanguage`, in
 
 The `CCpp.tmLanguage` file is the syntax definition included in the **C++ Starting Kit** package.
 
-It is composed as follow :
+It is based on the default `C++.sublime-package` file and tweaked as follow :
 
 * `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition for the default C and C++ language support, were splitted, documented, merged and improved in [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
 * `C++.sublime-build`, which embedded the default build system for C and C++, was customized and renamed in [`CCpp.sublime-build`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-build).

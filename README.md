@@ -128,13 +128,13 @@ The greatest part of the changes are in the [`CCpp.tmLanguage`](https://github.c
 
 ## Very important
 
-The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code are added to add functionnalities and avoid undesirable behaviors.
+The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
 
 For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the "block detection".
 
 If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
 
-Everything in this file is organised like this.
+The entire document is organised like this, everything is documented as possible. This allow to quickly the system and quickly add functionalities if necessary.
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 

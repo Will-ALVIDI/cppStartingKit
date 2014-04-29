@@ -7,7 +7,7 @@ C++ Starting Kit for Sublime Text
 **It is highly recommended to read the [Philosophy](https://github.com/kodLite/cppStartingKit#philosophy) and the [Guide](https://github.com/kodLite/cppStartingKit#the-guide) before to install and use this package.**
 
 ## Philosophy
-The main objective of this project is to **provide a complete starting kit for beginners with C++ and Sublime Text** including :
+The main objective of this project is to **provide a complete starting kit and starting point for beginners with C++ and Sublime Text** including :
 * A syntax definition which gives you the flexibility to make precise customizations to your syntax highlighting. (see the [Preview](https://github.com/kodLite/cppStartingKit#preview) of the **C++ Starting Kit**)
 * An associated theme which includes all the new scopes. (see [Oasis Theme](https://github.com/kodLite/Oasis-Theme))
 * An intelligible build system. (see the [C++ Starting Kit build system](https://github.com/kodLite/cppStartingKit#use-the-c-starting-kit-build-system))
@@ -46,9 +46,9 @@ The Guide
 
 If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ Starting Kit** and this guide are for you. 
 
-If you are anyone else you can find tips which will help you to customize your Sublime Text environment.
+If you are anyone else you can find tips to customize your Sublime Text environment.
 
-I made this project because I found really hard to start C++ with Sublime Text. Mainly because the native support is, in my opinion, not really functional, the documentation not design for beginners and too many things are involved and are not entirely covered by forums and other ressources. 
+I created this project because as a beginner in programming I found really hard to start C++ with Sublime Text. Mainly because the native support is, in my opinion, not really functional, the documentation is not designed for beginners and too many things are interlocked and covered with difficulties by forums and other ressources. 
 
 I tried to collect every bit of useful informations from my own experience and centralised it in this document.
 

@@ -53,11 +53,11 @@ The informations provided in this guide should help you to understand the core o
 
 # Install the package
 
-## Manually
+### Manually
 
 (To do)
 
-## From Package Control
+### From Package Control
 
 (To do)
 
@@ -70,29 +70,29 @@ A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite
 
 Otherwise check the next part, it's a set of useful tips which will help to customize your Sublime Text environment for **C++ Starting Kit**.
 
-## Change your color scheme
+### Change your color scheme
 
 * Go to `Preferences > Color Scheme` menu.
 
-## Locate your color scheme configuration file
+### Locate your color scheme configuration file
 
 * Default color schemes are located inside the package `Sublime Text/Packages/Color Scheme - Default.sublime-package`. (see [How to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
 * User color schemes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
 
 If you want to tweak a default color scheme I recommend you to copy it and rename it in your `Sublime Text/Data/Packages/User` folder.
 
-## Find a scope name
+### Find a scope name
 
 * Put your cursor under the scope you want to know the name.
 * Type `Ctrl + Alt + Shift + P`.
 * The name will appear at the bottom of your Sublime Text interface.
 
-## Search a scope in your color scheme configuration file
+### Search a scope in your color scheme configuration file
 
 * Make a search by typing `Ctrl + F`.
 * Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
 
-## Add a missing scope in your color scheme configuration file
+### Add a missing scope in your color scheme configuration file
 
 If you are sure that the scope doesn't exist in your `*.tmTheme`, which contin your color scheme, add the following lines and fill the fields between the tags(<tag>Your specification</tag>) correctly :
 
@@ -113,7 +113,7 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, which contin y
 
 #Customize your syntax definition
 
-## What you need to know
+## About CCpp.tmLanguage
 
 The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`).
 In **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :

@@ -72,9 +72,9 @@ The informations provided in this guide should help you to understand the core o
 
 ### Introduction
 
-The syntax definition, define by a `*.tmLanguage` configuration file in Sublime Text, allow you to customize your syntax highlighting by tweaking your color scheme, generally a `*.tmTheme` file(not included in **C++ Starting Toolkit** package). 
+The syntax definition, mainly define by a `*.tmLanguage` configuration file in Sublime Text, allow you to customize your syntax highlighting by tweaking your color scheme, generally a `*.tmTheme` file(not included in **C++ Starting Toolkit** package). 
 
-To be able to quickly get a result, in the `*.tmLanguage` of **C++ Starting Kit** which is `CCpp.tmLanguage`, only the necessary pieces of code were modified :
+To get a quick result in the **C++ Starting Kit** development only the necessary changes were made :
 * `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
 * `C++.sublime-build`, which embed the build system, was customized and renamed in [`CCpp.sublime-build`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-build).
 * `C++.sublime-settings`, which specifies the supported file types, was just renamed in [`CCpp.sublime-settings`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-settings). 

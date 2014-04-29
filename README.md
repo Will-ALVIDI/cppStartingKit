@@ -229,6 +229,8 @@ By default the build system is design as follow :
 		]
 	}
 
+I will just detail the first line which is the more important, I recommend you to check the documentation of Sublime Text and MinGW to customize it :
+
 * `"g++"` invoke g++.exe.
 * `"-Wall"` will warn you for all errors.
 * `"*.cpp"` wil include every `*.cpp` file in the same folder.

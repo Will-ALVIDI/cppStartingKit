@@ -78,7 +78,7 @@ Otherwise check the following, it's a set of useful tips which will help to cust
 
 ### Locate your color scheme configuration file
 
-* Default color schemes are located inside the package `Sublime Text/Packages/Color Scheme - Default.sublime-package`. (see [How to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
+* Default color schemes are located inside the package `Sublime Text/Packages/Color Scheme - Default.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
 * User color schemes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
 
 If you want to tweak a default color scheme I recommend you to copy it and rename it in your `Sublime Text/Data/Packages/User` folder.
@@ -96,7 +96,7 @@ If you want to tweak a default color scheme I recommend you to copy it and renam
 
 ### Add a missing scope in your color scheme configuration file
 
-If you are sure that the scope doesn't exist in your `*.tmTheme`, which contin your color scheme, add the following lines and fill the fields between the tags(<tag>Your specification</tag>) correctly :
+If you are sure that the scope doesn't exist in your `*.tmTheme`, which contain your color scheme, add the following lines and fill the fields between the tags(`<tag>Your specification</tag>`) correctly :
 
 		<dict>
 			<key>name</key>
@@ -136,7 +136,7 @@ For example the curly brackets were defined as `open.curly.bracket.ccpp` and `cl
 
 If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite !!! (see the example below)
 
-The entire document is organised like this, everything is documented as possible. This allow to quickly the system and quickly add functionalities if necessary.
+The entire document is organised like this, everything is documented as possible. This allow you to quickly understand the system and easily add functionalities if necessary.
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
@@ -187,7 +187,7 @@ The second thing is to chosse the correct options for this specific installation
 
 ![MinGW 64 project options](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-install-options-marked.jpg?raw=true)
 
-### Add MinGW to your system path
+### Add folders to your system path
 
 ### Understand the build system
 

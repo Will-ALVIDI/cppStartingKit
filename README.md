@@ -204,7 +204,7 @@ In the case of MinGW -64 the command `g++` invoked by the **C++ Starting Kit** b
 
 This will give you a list of folders userful for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, `Ctrl + C` to copy the entire line then `Ctrl + V` to paste) in a safe document to be able to access it or bring it back to his default state if necessary. 
 
-If you followed this guide from the beginning you have to add at the of this line a semi colon `;` followed by `C:/MinGW/x64/mingw64/bin`.
+If you followed this guide from the beginning you have to add at the end of this line a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
 
 * Then log off or restart your computer to apply the changes.
 

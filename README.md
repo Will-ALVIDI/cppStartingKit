@@ -263,8 +263,11 @@ Few steps are necessary to do it :
 
 As a result you will get a `myProgramName.exe` file inside your folder and you can run it by typing his name inside the command prompt then press `Enter`.
 
-# Sublime Text projects
-
-### Use the build system
+### Use the C++ Starting Kit build system
+Default commands for `Build` and `Run` are :
 * `Ctrl + B` to build your program.
 * `Ctrl + Shit + B` to run your program.
+
+# Sublime Text projects
+
+# Go further

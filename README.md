@@ -173,16 +173,16 @@ If you want to use the **C++ Starting Kit** build system you have 5 things to do
 * Understand how the build system work.
 * Know how to use the build system.
 
-### Install MinGW -64
-* Go to the MinGW -64 project homepage at [http://mingw-w64.sourceforge.net/](http://mingw-w64.sourceforge.net/)
+### Install MinGW-w64
+* Go to the MinGW-w64 project homepage at [http://mingw-w64.sourceforge.net/](http://mingw-w64.sourceforge.net/)
 
 This should give you the page below then click on the download page where it is highlighted on the next image. 
 
-![MinGW 64 project main page](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-main-page-marked.jpg?raw=true)
+![MinGW-w64 project main page](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-main-page-marked.jpg?raw=true)
 
 * To keep things easy, on the download page, get **the installer**, highlighted on the next image. This should give you a file called `mingw-builds-install.exe`.
 
-![MinGW 64 project download page](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-download-page-marked.jpg?raw=true)
+![MinGW-w64 project download page](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-download-page-marked.jpg?raw=true)
 
 * Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major thing to take care of.
 
@@ -190,15 +190,15 @@ You have to remember the path where you will install it because it will be neces
 
 The second thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is.
 
-![MinGW 64 project options](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-install-options-marked.jpg?raw=true)
+![MinGW-w64 project options](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-install-options-marked.jpg?raw=true)
 
 * Click `Next` when it's required and let the installation finish is work.
-* Now you need to [add MinGW to your system path]((https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path)).
+* Now you need to [add MinGW-w64 to your system path]((https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path)).
 
 ### Add folders to your system path
 Add folders to your system path allow programs to invoke specific commands.
 
-In the case of MinGW -64 the command `g++` invoked by the **C++ Starting Kit** build system, which is in reality `g++.exe`, must be indicate to your system to allow Sublime Text to call it when it compile your programs.
+In the case of MinGW-w64 the command `g++` invoked by the **C++ Starting Kit** build system, which is in reality `g++.exe`, must be indicate to your system to allow Sublime Text to call it when it compile your programs.
 
 * Go to your `Start Menu`.
 * Right click on `Computer` then select `Properties`.

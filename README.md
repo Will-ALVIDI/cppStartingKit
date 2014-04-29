@@ -74,7 +74,20 @@ The informations provided in this guide should help you to understand the core o
 
 `*.sublime-package` inside your `Sublime Text/Packages` folder contains specific language definitions as well as the default theme, `Theme - Default.sublime-package`, and the default color schemes, `Color Scheme - Default.sublime-package`.
 
-Syntax definitions are mainly define by a configuration file, `*.tmLanguage`, inside those `*.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package))
+Syntax definitions are mainly define by a configuration file, `*.tmLanguage`, inside those `*.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package) just below)
+
+### How to edit a *.sublime package
+
+`*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside those packages you have to follow these steps :
+* Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
+* Copy and paste it in a safe place and do your tweaks on this copy.
+* To open the package you have to rename it in `*.zip` then extract it.
+* Inside the extracted folder you will find the editable files.
+* When finished, save your changes.
+* Close Sublime Text. 
+* "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
+* Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
+* Restart Sublime Text.
 
 ### Global Structure of CCpp.tmLanguage
 
@@ -96,19 +109,6 @@ For example the curly brackets were defined as `open.curly.bracket.ccpp` and `cl
 If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite. (see the example below)
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
-
-### How to edit a *.sublime package
-
-`*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside those packages you have to follow these steps :
-* Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
-* Copy and paste it in a safe place and do your tweaks on this copy.
-* To open the package you have to rename it in `*.zip` then extract it.
-* Inside the extracted folder you will find the editable files.
-* When finished, save your changes.
-* Close Sublime Text. 
-* "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
-* Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
-* Restart Sublime Text.
 
 # Customize your color scheme
 

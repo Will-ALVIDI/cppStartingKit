@@ -44,7 +44,7 @@ But don't worry, as it is my primary tool for my journey to C++, I will do my be
 
 ![C++ Starting Kit Add Keyword](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/Namespace-added.jpg?raw=true)
 
-THE GUIDE
+The Guide
 =========
 
 If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ Starting Kit** and this guide are for you. 

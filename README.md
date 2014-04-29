@@ -214,11 +214,11 @@ If you followed this guide from the beginning you have to add at the end of this
 
 * Then log off or restart your computer to apply the changes.
 
-### Understand the build system
+### Understand the C++ Starting Kit build system
 
 **The basics**
 
-By default the build system is design as follow :
+By default the **C++ Starting Kit** build system is design as follow :
 
 	{
 		"cmd": ["g++", "-Wall","*.cpp", "-I", "../header","-o", "${file_path}/${file_base_name}"],
@@ -236,7 +236,7 @@ By default the build system is design as follow :
 		]
 	}
 
-I will just detail the first line which are the more important, I recommend you to check the documentation of Sublime Text and MinGW to customize it :
+I will just detail the first line which are the more important.
 
 * `"g++"` invoke g++.exe.
 * `"-Wall"` will warn you for all errors.
@@ -256,7 +256,7 @@ Then type the following commands which are equivalent to the **C++ Starting Kit*
 
 `g++ -Wall *.cpp -I ../header -o myProgramName.exe`
 
-As a result you will get a `myProgramName.exe` inside your folder that you can run by typing his name inside the command prompt.
+As a result you will get a `myProgramName.exe` inside your folder that you can run by typing his name inside the command prompt and p[ress `Enter`.
 
 # Sublime Text projects
 

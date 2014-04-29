@@ -49,7 +49,11 @@ The Guide
 
 If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ Starting Kit** and this guide are for you. 
 
-I tried to collect every bit of useful informations from my own starting and give it as a reference guide. 
+I made this project because I found really hard to start C++ with Sublime Text. Mainly because the native support is in my sense not really functional, the documentation not design for beginners and informations are rarely complete on forums and other ressources. 
+
+I tried to collect every bit of useful informations from my own experience and centralised it in one major document.
+
+Sublime Text is a tool for me and I don't won't to promote it over any other solution but the **C++ Starting Kit** can be useful too if you are a more experience C++ user and you want to test it.
 
 This guide covers the management of this package with Sublime Text 3 under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system. 
 

@@ -270,5 +270,12 @@ Default commands for `Build` and `Run` with C++ Starting Kit build system are :
 * `Ctrl + Shit + B` to run your program.
 
 # Sublime Text projects
+(To do)
 
 # Go further
+
+## Plugins
+(To do)
+
+## Ressources and references
+(To do)

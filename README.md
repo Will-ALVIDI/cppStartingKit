@@ -13,12 +13,12 @@ Go to [The Guide](https://github.com/kodLite/cppStartingKit#the-guide)
 The main objective of this project is to **provide a real starting kit for beginners with C++ and Sublime Text** including :
 * A syntax definition which gives you the flexibility to make precise customizations to your syntax highlighting.
 * An associated theme which includes all the new scopes. (see [Oasis Theme](https://github.com/kodLite/Oasis-Theme))
-* An intelligible build system.
+* An intelligible build system. (see the [C++ Starting Kit build system](https://github.com/kodLite/cppStartingKit#use-the-c-starting-kit-build-system))
 * A relevant documentation for a quick start and an accessible maintenance.(see [The Guide](https://github.com/kodLite/cppStartingKit#the-guide))
 
 **I have to mention two major things before to continue :**
 
-* First, **I'm really new in programming**. The first release of this package is the result of my first week of learning. My original goal is to learn C++ with a lightweight and flexible tool. A tool which allow me to customize my environment and let me control things like compiling. This was not an easy task because of the huge amount of solutions available out there. Finally Sublime Text seems to suit pretty well to my needs with his reasonable learning curve. 
+* First, **I'm really new in programming**. The first release of this package is the result of my first week of learning. My original goal is to learn C++ with a lightweight and flexible tool. A tool which allow me to customize my environment and let me control things like compiling.
 * The second thing I want to mention is, in my opinion, **this package is not yet ready for production**. Even if the main behaviors are ever described and seem to work correctly, I think it will demand you a certain investment before to make it fully functional for your professional environment. 
 
 But don't worry, as it is my primary tool for my journey to C++, I will do my best to update it quickly and make it fully functional as soon as possible.
@@ -128,8 +128,7 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, which contain 
 
 ### Introduction to CCpp.tmLanguage
 
-The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`). Both are part of the **C++ Starting Kit** package.
-To be able to quickly get a result, only the necessary pieces of code were modified :
+The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`)(not included). For **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :
 * `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
 * `C++.sublime-build`, which embed the build system, was customized and renamed in [`CCpp.sublime-build`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-build).
 * `C++.sublime-settings`, which specifies the supported file types, was just renamed in [`CCpp.sublime-settings`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-settings). 

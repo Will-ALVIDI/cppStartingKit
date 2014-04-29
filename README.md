@@ -104,9 +104,9 @@ It is composed as follow :
 
 The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
 
-For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the "block detection".
+For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the curly brackets "block detection".
 
-If you want to follow this process you have to put the main behavior at the bottom of your overrides, and not the opposite. (see the example below)
+If you want to follow this process you have to put your main behaviors at the bottom and override them to the top, and not the opposite. (see the example below)
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
@@ -166,7 +166,7 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, which contain 
 
 ## Prerequisite
 If you want to use the **C++ Starting Kit** build system you have 5 things to do :
-* Install a compiler compatible with g++. In our case MinGW -64 for x86 and x64 developments.
+* Install a compiler compatible with g++. In our case MinGW-w64 for x86 and x64 developments.
 * Add your compiler to your system path.
 * Restart your computer.
 * Understand how the build system work.
@@ -183,21 +183,21 @@ This should give you the page below then click on the download page highlighted 
 
 ![MinGW-w64 project download page](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-download-page-marked.jpg?raw=true)
 
-* Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major thing to take care of.
+* Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major things to take care of.
 
-You have to remember the path where you will install it because it will be necessary to [add it to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path). Otherwise the build system will not recognize the commands invoked by the **C++ Starting Kit build system**. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding a new folder like `C:\MinGW\x86`.
+You have to remember the path where you will install it because it will be necessary to for a next step. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding a new folder like `C:\MinGW\x86`.
 
 The second thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is.
 
 ![MinGW-w64 project options](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-install-options-marked.jpg?raw=true)
 
-* Click `Next` when it's required and let the installation finish is work.
+* Click `Next` when it's required and let the installation finish his work.
 * Now you need to [add MinGW-w64 to your system path]((https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path)).
 
 ### Add folders to your system path
 Add folders to your system path allow programs to invoke specific commands.
 
-In the case of MinGW-w64 the command `g++` invoked by the **C++ Starting Kit** build system, which is in reality `g++.exe`, must be indicate to your system to allow Sublime Text to call it when it compile your programs.
+In the case of MinGW-w64 the command `g++`, invoked by the **C++ Starting Kit** build system, which is in reality `g++.exe`, must be indicate to your system to allow Sublime Text to call it when it compile your programs.
 
 * Go to your `Start Menu`.
 * Right click on `Computer` then select `Properties`.
@@ -206,7 +206,7 @@ In the case of MinGW-w64 the command `g++` invoked by the **C++ Starting Kit** b
 * In `System variables` scroll down until you find `path`.
 * Then click edit.
 
-This will give you a list of folders useful for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C` to copy what is selected then `Ctrl + V` to paste) in a safe document to be able to access it or bring it back to his default state if necessary. 
+This will give you a list of folders vital for your system to work. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C` to copy what is selected then `Ctrl + V` to paste) in a safe document to be able to bring everything back to his default state if necessary. 
 
 If you followed this guide from the beginning you have to add at the end of this line, inside the field, a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
 
@@ -245,11 +245,11 @@ I recommend you to create your own first build system inside the user folder in 
 
 I will just detail the first lines which are the most important.
 
-* `"g++"` invoke g++.exe, the compiler.
-* `"-Wall"` will warn you for all errors.
-* `"*.cpp"` wil include all the `*.cpp` files stored in the same folder.
-* `"-I"` and `"../header"` will include a folder called `header` one level above the current file in your project directory.
-* `"-o"` followed by `"${file_path}/${file_base_name}"` will generate an executable, a `*.exe` file, inside the current file path with your file name as a base.
+* `"g++"` invoke `g++.exe`, the compiler.
+* `"-Wall"`, for "warn all", will warn you for all errors.
+* `"*.cpp"` wil include all the `*.cpp` files stored in the same folder to the compilation process.
+* `"-I"`, for 'include", and `"../header"` will include a folder called `header` one level above the current file in your project directory.
+* `"-o"`, for "output", followed by `"${file_path}/${file_base_name}"` will output your executable, a `*.exe` file, inside the current file path with your the file name as base.
 
 **Build and Run by a command prompt**
 

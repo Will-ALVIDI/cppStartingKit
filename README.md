@@ -1,7 +1,7 @@
 C++ Starting Kit for Sublime Text
 =================================
 
-Go to [The Guide](https://github.com/kodLite/cppStartingKit#the-guide).
+**Go to [The Guide](https://github.com/kodLite/cppStartingKit#the-guide).**
 
 ## Features
 * C, C++ and C++11 combined and improved syntax highlighting support.
@@ -124,7 +124,7 @@ If you are sure that the scope doesn't exist in your `*.tmTheme`, which contain 
 
 ### Introduction to CCpp.tmLanguage
 
-The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`).
+The syntax definition(`*.tmLanguage`) allow the syntax highlighting(`*.tmTheme`). Both are contained in the CCpp.sublime-package.
 In **C++ Starting Kit**, to be able to quickly get a result, only the necessary pieces of code were modified :
 * `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition, were merged into [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
 * `C++.sublime-build`, which embed the build system, was customized and renamed in [`CCpp.sublime-build`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-build).

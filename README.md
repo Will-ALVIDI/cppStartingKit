@@ -159,9 +159,19 @@ The entire document is organised like this, everything is documented as possible
 # Use the included C++ custom build
 
 ## Prerequisite
-If you want to use the C++ Starting Kit build system you have 3 things to do :
+If you want to use the **C++ Starting Kit** build system you have 5 things to do :
 * Install MinGW, in our case MinGW 64 for x86 and x64 developments.
 * Add MinGW to your system path.
 * Restart your computer
+* Understand how the build system work
+* Know how to use the build system
 
-### Install MinGW 
+### Install MinGW
+*Go to the MinGW project homepage at [http://mingw-w64.sourceforge.net/](http://mingw-w64.sourceforge.net/)
+
+
+### Add MinGW to your system path
+
+### Understand the build system
+
+### Use the build system

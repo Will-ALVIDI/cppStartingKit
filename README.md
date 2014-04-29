@@ -239,6 +239,7 @@ I will just detail the first line which is the more important, I recommend you t
 
 If you want to use g++ without any Sublime Text build system you can :
 * Open a command prompt where your main `*.cpp` is stored.
+
 Locate the folder, `Shift + Richt Click`, then choose `Open command window here`.
 * Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
 

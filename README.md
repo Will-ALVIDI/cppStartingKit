@@ -266,7 +266,7 @@ As a result you will get a `myProgramName.exe` file inside your folder and you c
 
 ### Use the C++ Starting Kit build system
 
-Default commands for `Build` and `Run` are :
+Default commands for `Build` and `Run` with C++ Starting Kit build system are :
 * `Ctrl + B` to build your program.
 * `Ctrl + Shit + B` to run your program.
 

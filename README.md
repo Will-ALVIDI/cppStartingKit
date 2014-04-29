@@ -220,26 +220,27 @@ If you followed this guide from the beginning you have to add at the end of this
 Build systems in Sublime Text are project specific. It is hard to make one which covers every type of project you will do. The **C++ Starting Kit** provide a build system and the following documentation as a starting point not an universal solution.
 
 I recommend you to create your personal build system inside your Sublime `Text/Data/Packages/User` folder :
+
 * Go to `Text/Data/Packages/User` folder or inside Sublime Text `Preferences > Browse Packages...` then go inside the `User` folder. 
 * Create a file with an easily recognizable name like `User - C++.sublime-build`.
-* Copy and paste the following.
+* Copy and paste the following, it is a copy of the **C++ Starting Kit** build system.
 
-	{
-		"cmd": ["g++", "-Wall","*.cpp", "-I", "../header","-o", "${file_path}/${file_base_name}"],
-		"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
-		"working_dir": "${file_path}",
-		"selector": "source.c++",
-		"shell" : true,
-	
-		"variants":
-		[
-			{
-				"cmd": ["start","cmd", "/k","${file_path}/${file_base_name}"],
-				"name": "Run"
-			},
-		]
-	}
-	
+		{
+			"cmd": ["g++", "-Wall","*.cpp", "-I", "../header","-o", "${file_path}/${file_base_name}"],
+			"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+			"working_dir": "${file_path}",
+			"selector": "source.c++",
+			"shell" : true,
+		
+			"variants":
+			[
+				{
+					"cmd": ["start","cmd", "/k","${file_path}/${file_base_name}"],
+					"name": "Run"
+				},
+			]
+		}
+
 * Then you have to activate your custom build system by going to `Tools > Build System > User - C++`.
 
 I will just detail the first line which are the most important.

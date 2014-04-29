@@ -156,12 +156,12 @@ The entire document is organised like this, everything is documented as possible
 * Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
 * Restart Sublime Text.
 
-
-
-
-
 # Use the included C++ custom build
 
 ## Prerequisite
+If you want to use the C++ Starting Kit build system you have 3 things to do :
+* Install MinGW, in our case MinGW 64 for x86 and x64 developments.
+* Add MinGW to your system path.
+* Restart your computer
 
 ### Install MinGW 

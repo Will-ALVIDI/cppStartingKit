@@ -45,7 +45,7 @@ But don't worry, as it is my primary tool for my journey to C++, I will do my be
 THE GUIDE
 =========
 
-This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending on your Sublime Text version or your operating system. 
+This guide covers the management of this package with Sublime Text 3 under Windows. Things are pretty much the same depending on your version of Sublime Text and your operating system but a quick search with Internet should give you the answers. 
 
 The informations provided in this guide should help you to understand the core of the syntax definition and how globally things work inside Sublime Text. 
 
@@ -60,38 +60,39 @@ The informations provided in this guide should help you to understand the core o
 (To do)
 
 
-# Customize your Theme
+# Customize your color scheme
 
-If you use a default theme or something downloaded from the Internet you will surely need to tweak your theme configuration file(`*.tmTheme`) to make it fully functional with **C++ Starting Kit**. 
+If you use a default color scheme or something downloaded from the Internet and you want to use the **C++ Starting Kit** you will have to manage your scopes inside his configuration file.
 
 A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
 
-Otherwise check the next part, it's a set of useful tips which will help to customize your Sublime Text environment.
+Otherwise check the next part, it's a set of useful tips which will help to customize your Sublime Text environment for **C++ Starting Kit**.
 
-## Change your theme
+## Change your color scheme
 
 * Go to `Preferences > Color Scheme` menu.
 
-## Locate your theme configuration file
+## Locate your color scheme configuration file
 
-* Default themes are located inside `Sublime Text/Packages/Color Scheme - Default.sublime-package`. (see [How to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
-* User themes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
+* Default color schemes are located inside the package `Sublime Text/Packages/Color Scheme - Default.sublime-package`. (see [How to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
+* User color schemes are located in `Sublime Text/Data/Packages/User/*.tmTheme`.
 
-If you want to tweak a default theme I recommend you to copy it and rename it in your `Sublime Text/Data/Packages/User` folder.
+If you want to tweak a default color schheme I recommend you to copy it and rename it in your `Sublime Text/Data/Packages/User` folder.
 
-## Retrieve a scope name
+## Find a scope name
 
 * Put your cursor under the scope you want to know the name.
 * Type `Ctrl + Alt + Shift + P`.
+* The name will appear at the bottom of your Sublime Text interface.
 
-## Search a scope in your theme configuration file
+## Search a scope in your color scheme configuration file
 
 * Make a search by typing `Ctrl + F`.
 * Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
 
-## Add a missing scope in your theme configuration file
+## Add a missing scope in your color scheme configuration file
 
-If you are sure that the scope doesn't exist in your `*.tmTheme`, add the following lines and fill the fields correctly :
+If you are sure that the scope doesn't exist in your `*.tmTheme`, which contin your color scheme, add the following lines and fill the fields between the tags(<tag>Your specification</tag>) correctly :
 
 		<dict>
 			<key>name</key>

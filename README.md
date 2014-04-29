@@ -51,7 +51,7 @@ I tried to collect every bit of useful informations from my own starting and giv
 
 This guide covers the management of this package with Sublime Text 3 under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system and a quick search with Internet should give you the answers. 
 
-The informations provided in this guide should help you to understand the core of the syntax definition provided by **C++ Starting Kit** and how globally things work inside Sublime Text. 
+The informations provided in this guide should help you to understand the core of the **C++ Starting Kit** and how globally things work inside Sublime Text. 
 
 # Install the package
 
@@ -181,13 +181,13 @@ This should give you the page below then click on the download page where it is 
 
 * Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major thing to take care of.
 
-You have to remember the path where you will install it because it will be necessary to [add it to your path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path). Otherwise the build system will not recognize the commands you will invoke. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding an new folder like `C:\MinGW\x86`.
+You have to remember the path where you will install it because it will be necessary to [add it to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path). Otherwise the build system will not recognize the commands invoked by the C++ Starting Kit build systen. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because if you have an other version of MinGW to install you can do it properly just by adding an new folder like `C:\MinGW\x86`.
 
 The second thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is.
 
 ![MinGW 64 project options](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-install-options-marked.jpg?raw=true)
 
-* Click next when it's required and let the installation finish is work.
+* Click `Next` when it's required and let the installation finish is work.
 * Now you need to [add MinGW to your system path]((https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path)).
 
 ### Add folders to your system path

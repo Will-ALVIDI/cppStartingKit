@@ -88,17 +88,44 @@
 			<string>keyword.operator.arithmetic.ccpp</string>
 		</dict>
 <!------------------------------------------
+	Curly Brackets (override)- CCpp
+-------------------------------------------->	
+		<dict>
+			<key>match</key>
+			<string>\}(?=[^\;\s\r\n])</string>
+			<key>name</key>
+			<string>close.curly.bracket.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=[^\s\r\n])\s*\}</string>
+			<key>name</key>
+			<string>close.curly.bracket.ccpp</string>
+		</dict>
+<!------------------------------------------
 	Curly Brackets Block - CCpp
 -------------------------------------------->	
 		<dict>
 			<key>match</key>
-			<string>\{(?=(\s*)(\r|\n))</string>
+			<string>\{(?=(\s*|\t*)\/\/\s*.*(\r|\n))</string>
 			<key>name</key>
 			<string>open.curly.bracket.block.ccpp</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>^(\s*)\}(?=\;?)</string>
+			<string>\{(?=(\s*|\t*)(\r|\n))</string>
+			<key>name</key>
+			<string>open.curly.bracket.block.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?&lt;=\s)\}(?=\;?)</string>
+			<key>name</key>
+			<string>close.curly.bracket.block.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>^\}</string>
 			<key>name</key>
 			<string>close.curly.bracket.block.ccpp</string>
 		</dict>
@@ -441,7 +468,7 @@
 ----------------------------------------------------->	
 		<dict>
 			<key>match</key>
-			<string>\w+(?=\()</string>
+			<string>(?&lt;=\s|\.)\w+(?=\()</string>
 			<key>name</key>
 			<string>support.function.any-method.ccpp</string>
 		</dict>

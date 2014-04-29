@@ -274,9 +274,6 @@ Default commands for `Build` and `Run` with **C++ Starting Kit** build system ar
 
 # Going further
 
-## Plugins
-(To do)
-
 ### Sublime Text project management
 
 To learn about Sublime Text project management I recommend you [this tutorial](http://www.youtube.com/watch?v=Kr5ztsD3Yr4) which is a bit longer than other videos available in the Internet but it covers all the basics and necessary tips to a good start with this tool.

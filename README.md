@@ -44,7 +44,7 @@ As it is my primary tool for my learning of C++ I will do my best to make it ful
 The Guide
 =========
 
-This guide is design for people who are really new in C++ programming and want to use Sublime Text as a small IDE. If you follow these instructions step by step you will get crucial informations about Sublime Text environment, the **C++ Starting Kit** and a real starting point for C++ developments.
+This guide is designed for people who are really new in C++ programming and want to use Sublime Text as a small IDE. If you follow these instructions step by step you will get crucial informations about Sublime Text environment, the **C++ Starting Kit** and a real starting point for your C++ projects.
 
 If you are anyone else you can find tips to customize your Sublime Text environment for C++ or else.
 
@@ -66,15 +66,17 @@ By default Python is not installed on Windows systems and if you want to take th
 
 To make it functional you have to :
 
-* Download the appropriate version of Python depending of your Sublime Text version.
+* [Download](https://www.python.org/downloads/) the appropriate version of Python depending of your Sublime Text version.
 
 You can have multiple versions of Python installed.
 
 * Add Python to your system path.
 
-Follow [this guide](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path) for MinGW-w64 and adapt it to Python. The path you will have to add at the end of the process is the main directory of your Python installation, where the `python.exe` file is stored.
+Read entirely this section to [add folders to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path) which covers how to add MinGW-w64 to your system path then and adapt it for your Python installation. 
 
-* Relog or restart your computer to apply the changes.
+The path you will have to add at the end of the process is the main directory of your Python installation, where the `python.exe` file is stored.
+
+* Then log off or restart your computer to apply the changes.
 
 # Use the C++ Starting Kit build system
 
@@ -110,7 +112,7 @@ For the next installation sequence you have to remember the path where you will 
 
 ### Add folders to your system path
 
-**As this part is useful for Python installation too, you can [click here](https://github.com/kodLite/cppStartingKit#install-python) to go back.**
+**As this part is useful for Python installation too, you can [click here](https://github.com/kodLite/cppStartingKit#install-python) to go back to Python section.**
 
 Add folders to your system path allow your system to share programs which can be call by other programs.
 

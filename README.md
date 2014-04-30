@@ -56,6 +56,9 @@ I created this project because as a beginner in programming I needed a digestibl
 
 I hope you will find relevant informations to suit to your needs.
 
+# Install Python
+(to do)
+
 # Install C++ Starting Kit
 
 ### Manually
@@ -185,7 +188,7 @@ This should give you the page below then click on the download page highlighted 
 
 * Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major things to take care of.
 
-You have to remember the path where you will install it because it will be necessary to for a next step. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because you may have later to install a different version of MinGW and you will can do it properly just by adding a new folder like `C:\MinGW\x86`.
+You have to remember the path where you will install it because it will be necessary for a next step. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because you may have later to install a different version of MinGW and you will can do it properly just by adding a new folder like `C:\MinGW\x86`.
 
 The second thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is.
 
@@ -254,7 +257,7 @@ As the compiling processes could require an entire guide I will just detail the 
 
 **Build and Run by a command prompt**
 
-The commands inside the **C++ Starting Kit** are reproducible and testable inside a command prompt. Test your Sublime Text build systems this way before to adapt it for Sublime Text build systems.
+The commands inside the **C++ Starting Kit** build system are reproducible and testable inside a command prompt. Test your Sublime Text build systems this way before to adapt it for Sublime Text build systems.
 
 Few steps are necessary to do it :
 * Locate the folder where your main program is stored.

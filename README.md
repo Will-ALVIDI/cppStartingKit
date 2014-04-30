@@ -115,6 +115,8 @@ If you want to follow this process you have to put your main behaviors at the bo
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
 
+The main idea behind this process is to have a flexbible and easily manageable and maintainable system which allow improvements without breaking everything. 
+
 # Customize your color scheme
 
 If you use a default color scheme or something downloaded from the Internet you will have to add [**C++ Starting Kit** scopes](https://github.com/kodLite/cppStartingKit#c-starting-kit-scope-list) inside your `*.tmTheme` configuration file.

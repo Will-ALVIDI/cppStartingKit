@@ -109,6 +109,8 @@ The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CC
 
 For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the curly brackets "block detection".
 
+![C++ Starting Kit logic](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/logic-ccpp-illustrated.jpg?raw=true)
+
 If you want to follow this process you have to put your main behaviors at the bottom and override them to the top, and not the opposite. (see the example below)
 
 ![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)

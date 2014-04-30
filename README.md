@@ -109,6 +109,9 @@ For the next installation sequence you have to remember the path where you will 
 * Now you need to [add MinGW-w64 to your system path]((https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path)).
 
 ### Add folders to your system path
+
+*For a more convenient navigation you can go back to the Python installation [here](https://github.com/kodLite/cppStartingKit#install-python).*
+
 Add folders to your system path allow your system to share programs which can be call by other programs.
 
 The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-w64/bin`folder, is required by the **C++ Starting Kit** build system and must be available in your system path to allow Sublime Text to access it. To do it just follow these steps :

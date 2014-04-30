@@ -107,7 +107,7 @@ It is based on the default `C++.sublime-package` file and tweaked as follow :
 
 The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
 
-For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override the first definition and define what we could call the curly brackets "block detection".
+For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override this first definition and define what we could call the curly brackets "block detection". After tests it seems that few exceptions appears and they are corrected by adding an additional code layer.   
 
 ![C++ Starting Kit logic](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/logic-ccpp-illustrated.jpg?raw=true)
 

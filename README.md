@@ -11,7 +11,7 @@ The main objective of this project is to **provide a complete starting kit and s
 * A syntax definition which gives you the flexibility to make precise customizations to your syntax highlighting. (see the [Preview](https://github.com/kodLite/cppStartingKit#preview))
 * An associated theme which includes all the new scopes. (see [Oasis Theme](https://github.com/kodLite/Oasis-Theme))
 * An intelligible build system. (see the [C++ Starting Kit build system](https://github.com/kodLite/cppStartingKit#use-the-c-starting-kit-build-system))
-* A relevant documentation for a quick start and an accessible maintenance.(see [The Guide](https://github.com/kodLite/cppStartingKit#the-guide))
+* A relevant documentation for a quick start and an accessible maintenance.(see [The Guide](https://github.com/kodLite/cppStartingKit-Guide))
 
 **I have to mention two major things before to continue :**
 

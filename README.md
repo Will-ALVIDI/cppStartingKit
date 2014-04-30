@@ -60,7 +60,7 @@ I hope you will find relevant informations to suit to your needs.
 
 ### Why Python is necessary
 
-Sublime Text 2 is based on [Python 2.6](https://www.python.org/downloads/)(also compatible with higher versions but inferior to 3 versions) and Sublime Text 3 on [Python 3](https://www.python.org/downloads/)(or more).
+Sublime Text 2 is based on [Python 2.6](https://www.python.org/downloads/)(also compatible with higher versions but inferior to the version 3) and Sublime Text 3 on [Python 3](https://www.python.org/downloads/)(or more).
 
 By default Python is not installed on Windows systems and if you want to take the best of Sublime Text, especially the plugin packages which are the core of this application, you need to have the right dedicated version of Python installed.
 
@@ -72,7 +72,9 @@ You can have multiple versions of Python installed.
 
 * Add Python to your system path.
 
-Follow [this guide](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path) for MinGW-w64 and adapt it to Python. The path you will have to add at the end is the main directory of your Python installation, where `python.exe` is sotred.
+Follow [this guide](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path) for MinGW-w64 and adapt it to Python. The path you will have to add at the end of the process is the main directory of your Python installation, where the `python.exe` file is stored.
+
+* Relog or restart your computer to apply the changes.
 
 # Use the C++ Starting Kit build system
 

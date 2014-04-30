@@ -249,9 +249,9 @@ I recommend you to create your first user build system inside the user folder in
 		}
 
 * Save the changes.
-* Then activate this custom build system by going in `Tools > Build System` menu and choose the `User - C++`.
+* Then activate this custom build system by going in `Tools > Build System` menu and choose your new `User - C++` build system.
 
-The first part of this code which begin by `"cmd"` is the `Build` function. The second, from `"variants"`, define the `Run` function.
+The first part of this build system which begin by `"cmd"` is the `Build` function. The second, from `"variants"`, define the `Run` function.
 
 As the compiling processes could require an entire guide I will just detail the first line which is the most important and redirect you to the [MinGW-w64 official documentation](http://www.mingw.org/wiki) and the [Unofficial Sublime Text Documentation](http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/build_systems.html) to improve your knowledges :
 
@@ -261,16 +261,15 @@ As the compiling processes could require an entire guide I will just detail the 
 * `"-I"`, for "include", and `"../header"` will include a folder called "header", one level above the current file directory.
 * `"-o"`, for "output", followed by `"${file_path}/${file_base_name}"` will output your executable, a `*.exe` file, inside the current file path with your current file name as base name.
 
-Those commands are part of the MinGW-w64
 
-**Build and Run by a command prompt**
+**Best practices : test your build systems by the command prompt**
 
-The commands inside the **C++ Starting Kit** build system are reproducible and testable inside a command prompt. Test your Sublime Text build systems this way before to adapt it for Sublime Text build systems.
+The commands inside the **C++ Starting Kit** build system are reproducible and testable inside Windows and his command prompt. Test your Sublime Text build systems this way before to adapt it for Sublime Text build systems.
 
 Few steps are necessary to do it :
 * Locate the folder where your main program is stored.
-* Press `Shift + Richt Click` then choose `Open command window here`. This will open a command prompt ready to work directly on your project directory and avoid you to do this manipulation by the command line.
-* Then type the following commands which are equivalent to the **C++ Starting Kit** build system : 
+* Press `Shift + Richt Click` then choose `Open command window here`. This will open a command prompt ready to work directly on your project directory and avoid you to do this manipulation by command lines.
+* Then try the following commands which are equivalent to the **C++ Starting Kit** build system : 
 
 	**`g++ -Wall *.cpp -I ../header -o myProgramName.exe`**
 

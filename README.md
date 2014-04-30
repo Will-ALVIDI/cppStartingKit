@@ -23,20 +23,20 @@ As it is my primary tool for my learning of C++ I will do my best to make it ful
 ## Preview
 **[Oasis Theme](https://github.com/kodLite/Oasis-Theme) not included**
 
-![C++ Starting Kit Standard behavior](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/standard-behavior.jpg?raw=true)
+![C++ Starting Kit Standard behavior](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/standard-behavior.jpg?raw=true)
 
 **Arithmetic operators are now customizable.**
 
-![C++ Starting Kit Arithmetic Operators](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/custom-arithmetic-operators.jpg?raw=true)
+![C++ Starting Kit Arithmetic Operators](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/custom-arithmetic-operators.jpg?raw=true)
 
 **More customization.**
 
-![C++ Starting Kit Customize Everything](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/customize-everything.jpg?raw=true)
+![C++ Starting Kit Customize Everything](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/customize-everything.jpg?raw=true)
 
 **Any function support.**
 
-![C++ Starting Kit Any Function Support](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/any-function-detection.jpg?raw=true)
+![C++ Starting Kit Any Function Support](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/any-function-detection.jpg?raw=true)
 
 **Easily [add to your syntax definition](https://github.com/kodLite/cppStartingKit#customize-your-syntax-definition) with the [documented configuration file](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).**
 
-![C++ Starting Kit Add Keyword](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/Namespace-added.jpg?raw=true)
+![C++ Starting Kit Add Keyword](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/Namespace-added.jpg?raw=true)

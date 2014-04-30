@@ -75,7 +75,7 @@ I hope you will find relevant informations to suit to your needs.
 
 ### Introduction
 
-`*.sublime-package` inside your `Sublime Text/Packages` folder contains specific language definitions as well as the default theme, `Theme - Default.sublime-package`, and the default color schemes, `Color Scheme - Default.sublime-package`.
+`*.sublime-package` inside your `Sublime Text/Packages` folder contains specific default languages definitions as well as the default theme, `Theme - Default.sublime-package`, and the default color schemes, `Color Scheme - Default.sublime-package`.
 
 Syntax definitions are mainly define by a configuration file, `*.tmLanguage`, inside those `*.sublime-package`.
 
@@ -103,7 +103,7 @@ It is based on the default `C++.sublime-package` file and tweaked as follow :
 * `C++.sublime-settings`, which specifies the supported file types, was just renamed in [`CCpp.sublime-settings`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-settings). 
 * All the other files were preserved.
 
-### Logic of CCpp.tmLanguage
+### Logic behind CCpp.tmLanguage
 
 The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
 

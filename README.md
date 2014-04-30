@@ -31,12 +31,12 @@ As it is my primary tool for my learning of C++ I will do my best to make it ful
 
 **More customization.**
 
-![C++ Starting Kit Customize Everything](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/customize-everything.jpg?raw=true)
+![C++ Starting Kit Customize Everything](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/customize-everything.jpg?raw=true)
 
 **Any function support.**
 
-![C++ Starting Kit Any Function Support](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/any-function-detection.jpg?raw=true)
+![C++ Starting Kit Any Function Support](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/any-function-detection.jpg?raw=true)
 
 **Easily [add to your syntax definition](https://github.com/kodLite/cppStartingKit#customize-your-syntax-definition) with the [documented configuration file](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).**
 
-![C++ Starting Kit Add Keyword](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/Namespace-added.jpg?raw=true)
+![C++ Starting Kit Add Keyword](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/Namespace-added.jpg?raw=true)

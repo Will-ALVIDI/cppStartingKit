@@ -123,7 +123,7 @@ If you use a default color scheme or something downloaded from the Internet you 
 
 A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
 
-Otherwise check the following. It is designed as set of useful tips which will help you to customize your Sublime Text environment.
+Otherwise you can take a look to the following. The next part is design as set of useful tips to customize your Sublime Text environment.
 
 ### Locate your color scheme configuration file
 
@@ -149,7 +149,7 @@ If you want to tweak a default color scheme I recommend you to copy and rename i
 
 ### Add a missing scope in your color scheme configuration file
 
-If you are sure that a scope is miising in your `*.tmTheme` file, which contain your color scheme, add the following lines and fill corretly the fields between the tags(`<tag>Your specification</tag>`) :
+If you are sure that a scope is missing in your `*.tmTheme` file, which contain your color scheme, add the following lines and fill corretly the fields between the tags(`<tag>Your specification</tag>`) :
 
 		<dict>
 			<key>name</key>
@@ -192,28 +192,28 @@ This should give you the page below then click on the download page highlighted 
 
 * Then launch `mingw-builds-install.exe`. An installation process will begin where you have two major things to take care of.
 
-You have to remember the path where you will install it because it will be necessary for a next step. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because you may have later to install a different version of MinGW and you will can do it properly just by adding a new folder like `C:\MinGW\x86`.
-
-The second thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is.
+The first thing is to chosse the correct options for this specific installation. Change the default architecture for the x64 and keep the rest as it is. Then click on the `Next` button.
 
 ![MinGW-w64 project options](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/mingw-install-options-marked.jpg?raw=true)
 
-* Click `Next` when it's required and let the installation finish his work.
+For the next installation sequence you have to remember the path where you will install MinGW-w64 because it will be necessary for the next step. I recommend you to install it in a more convenient place like `C:\MinGW\x64` because you may have later to install a different version of MinGW and you can do it properly just by adding a new folder like `C:\MinGW\x86` for example.
+
+* Then click on the `Next` button and let the installation finish his work.
 * Now you need to [add MinGW-w64 to your system path]((https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path)).
 
 ### Add folders to your system path
 Add folders to your system path allow your system to share programs which can be call by other programs.
 
-The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-w64/bin`folder, is required by the **C++ Starting Kit** build system and must be available in your system path to allow Sublime Text to access it :
+The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-w64/bin`folder, is required by the **C++ Starting Kit** build system and must be available in your system path to allow Sublime Text to access it. To do it just follow those steps :
 
 * Go to your `Start Menu`.
 * Right click on `Computer` then select `Properties`.
 * On the left side choose `Advanced system settings`.
 * Go to the `Advanced` tab then click on `Envrironment Variables`.
-* In `System variables` scroll down until you find `path`.
-* Then click edit.
+* In `System variables` scroll down until you find `path`, select it.
+* Then click on the `Edit` button.
 
-This will give you a list of vital folders for your system. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C`, to copy what is selected, then `Ctrl + V` to paste what you have copied) in a safe document to be able to bring everything back to his default state if necessary. 
+This will give you a list of vital folders for your system. Be really vigilant with the content inside this field. I recommend you to copy paste it first(`Ctrl + A`, to select everything, `Ctrl + C`, to copy what is selected, then `Ctrl + V` to paste what you have copied) in a new document in a safe place, that way you can bring everything back to his default state if necessary. 
 
 If you followed this guide from the beginning you have to add at the end of your system path, inside the field, a semi colon `;` directly followed by `C:/MinGW/x64/mingw64/bin`.
 
@@ -251,13 +251,17 @@ I recommend you to create your first user build system inside the user folder in
 * Save the changes.
 * Then activate this custom build system by going in `Tools > Build System` menu and choose the `User - C++`.
 
-As the compiling processes could require an entire guide I will just detail the first lines which are the most important.
+The first part of this code which begin by `"cmd"` is the `Build` function. The second, from `"variants"`, define the `Run` function.
+
+As the compiling processes could require an entire guide I will just detail the first line which is the most important and redirect you to the [MinGW-w64 official documentation](http://www.mingw.org/wiki) and the [Unofficial Sublime Text Documentation](http://sublime-text-unofficial-documentation.readthedocs.org/en/latest/reference/build_systems.html) to improve your knowledges :
 
 * `"g++"` call the launching of `g++.exe`, the compiler.
 * `"-Wall"`, for "warn all", will warn you for all errors.
 * `"*.cpp"` wil include all the `*.cpp` files stored in the same folder.
 * `"-I"`, for "include", and `"../header"` will include a folder called "header", one level above the current file directory.
 * `"-o"`, for "output", followed by `"${file_path}/${file_base_name}"` will output your executable, a `*.exe` file, inside the current file path with your current file name as base name.
+
+Those commands are part of the MinGW-w64
 
 **Build and Run by a command prompt**
 

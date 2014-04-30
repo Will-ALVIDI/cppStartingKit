@@ -110,7 +110,7 @@ For the next installation sequence you have to remember the path where you will 
 
 ### Add folders to your system path
 
-*For a more convenient navigation you can go back to the Python installation [here](https://github.com/kodLite/cppStartingKit#install-python).*
+*As this part is useful for Python installation too, you can [click here](https://github.com/kodLite/cppStartingKit#install-python) to go back.*
 
 Add folders to your system path allow your system to share programs which can be call by other programs.
 

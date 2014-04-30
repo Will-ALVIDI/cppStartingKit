@@ -88,7 +88,7 @@
 			<string>keyword.operator.arithmetic.ccpp</string>
 		</dict>
 <!------------------------------------------
-	Curly Brackets (override)- CCpp
+	Curly Brackets (exceptions)- CCpp
 -------------------------------------------->	
 		<dict>
 			<key>match</key>
@@ -193,23 +193,33 @@
 			<string>coma.ccpp</string>
 		</dict>
 <!---------------------------------------------------
-	Semi colon Block - CCpp
+	Semi colon End of Line (exceptions)- CCpp
 ----------------------------------------------------->	
 		<dict>
 			<key>match</key>
-			<string>\;+(?=.*;)</string>
+			<string>\;(?=(\s*|\t*)\/\/\s*.*(\r|\n))</string>
 			<key>name</key>
-			<string>semi_colon.ccpp</string>
+			<string>semi_colon.eol.ccpp</string>
 		</dict>
 <!---------------------------------------------------
 	Semi colon End of Line - CCpp
 ----------------------------------------------------->	
 		<dict>
 			<key>match</key>
-			<string>;(?!.*;)</string>
+			<string>\;(?=(\s*)(\r|\n))</string>
 			<key>name</key>
 			<string>semi_colon.eol.ccpp</string>
 		</dict>
+<!---------------------------------------------------
+	Semi colon Block - CCpp
+----------------------------------------------------->	
+		<dict>
+			<key>match</key>
+			<string>\;</string>
+			<key>name</key>
+			<string>semi_colon.ccpp</string>
+		</dict>
+
 <!--------------------------------------
 	Keyword Control - C
 ---------------------------------------->

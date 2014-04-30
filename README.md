@@ -59,120 +59,10 @@ I hope you will find relevant informations to suit to your needs.
 # Install Python
 (to do)
 
-# Install C++ Starting Kit
-
-### Manually
-
-(To do)
-
-### From Package Control
-
-(To do)
-
-#Customize your syntax definition
-
-## What you need to know
-
-### Introduction
-
-`*.sublime-package` inside your `Sublime Text/Packages` folder contains specific default languages definitions as well as the default theme, `Theme - Default.sublime-package`, and the default color schemes, `Color Scheme - Default.sublime-package`.
-
-Syntax definitions are mainly define by a configuration file, `*.tmLanguage`, inside those `*.sublime-package`.
-
-### How to edit a *.sublime package
-
-`*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside those packages you have to follow these steps :
-* Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
-* Copy and paste it in a safe place and do your tweaks on this copy.
-* To open the package you have to rename it in `*.zip` then extract it.
-* Inside the extracted folder you will find the editable files.
-* When finished, save your changes.
-* Close Sublime Text. 
-* "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
-* Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
-* Restart Sublime Text.
-
-### Global Structure of CCpp.tmLanguage
-
-The `CCpp.tmLanguage` file is the syntax definition included in the **C++ Starting Kit** package.
-
-It is based on the default `C++.sublime-package` file and tweaked as follow :
-
-* `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition for the default C and C++ language support, were splitted, documented, merged and improved in [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
-* `C++.sublime-build`, which embedded the default build system for C and C++, was customized and renamed in [`CCpp.sublime-build`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-build).
-* `C++.sublime-settings`, which specifies the supported file types, was just renamed in [`CCpp.sublime-settings`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-settings). 
-* All the other files were preserved.
-
-### Logic behind CCpp.tmLanguage
-
-The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
-
-For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override this first definition and define what we could call the curly brackets "block detection". After tests it seems that few exceptions appears and they are corrected by adding an additional code layer.   
-
-![C++ Starting Kit logic](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/logic-ccpp-illustrated.jpg?raw=true)
-
-If you want to follow this process you have to put your main behaviors at the bottom and override them to the top, and not the opposite. (see the example below)
-
-![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
-
-The main idea behind this process is to have a flexbible and easily manageable and maintainable system which allow improvements without breaking everything. 
-
-# Customize your color scheme
-
-If you use a default color scheme or something downloaded from the Internet you will have to add [**C++ Starting Kit** scopes](https://github.com/kodLite/cppStartingKit#c-starting-kit-scope-list) inside your `*.tmTheme` configuration file.
-
-A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
-
-Otherwise you can take a look to the following. The next part is design as set of useful tips to customize your Sublime Text environment.
-
-### Locate your color scheme configuration file
-
-* Default color schemes are located inside the `Sublime Text/Packages` folder in a file called `Color Scheme - Default.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
-* User color schemes are located in `Sublime Text/Data/Packages/User` folder as a `*.tmTheme` file.
-
-If you want to tweak a default color scheme I recommend you to copy and rename it in your `Sublime Text/Data/Packages/User` folder.
-
-### Change your color scheme
-
-* Go to `Preferences > Color Scheme` menu then make your choice between `Color Scheme - Default` and `User` color schemes if you have one.
-
-### Find a scope name
-
-* Put your cursor under the scope you want to know the name.
-* Type `Ctrl + Alt + Shift + P`.
-* The name will appear at the bottom of your Sublime Text interface.
-
-### Search a scope in your color scheme configuration file
-
-* Make a search by typing `Ctrl + F`.
-* Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
-
-### Add a missing scope in your color scheme configuration file
-
-If you are sure that a scope is missing in your `*.tmTheme` file, which contain your color scheme, add the following lines and fill corretly the fields between the tags(`<tag>Your specification</tag>`) :
-
-		<dict>
-			<key>name</key>
-			<string>Scope name</string> 		<!-- Enter a name for your scope here. -->
-			<key>scope</key>
-			<string>Scope definition</string> 	<!-- Enter your scopes here. (ex : keyword.ccpp) -->
-			<key>settings</key>
-			<dict>
-				<key>fontStyle</key>
-				<string></string> 				<!-- Choose a style (ex : italic, bold, italic bold) -->
-				<key>foreground</key>
-				<string></string> 				<!-- Choose a color (ex : #49a629) -->
-			</dict>
-		</dict>
-
-### C++ Starting Kit scope list
-
-**Arithmetic operators**(keyword.operator.arithmetic.ccpp), **Brackets**(open.curly.bracket.ccpp, close.curly.bracket.ccpp,open.round.bracket.ccpp, close.round.bracket.ccpp, open.angle.bracket.ccpp, close.angle.bracket.ccpp, open.curly.bracket.ovr.ccpp, close.curly.bracket.ovr.ccpp), **Block brackets**(open.curly.bracket.block.ccpp, close.curly.bracket.block.ccpp), **Punctuation**(period.ccpp, coma.ccpp,semi_colon.ccpp), **End of line semi colon**(semi_colon.eol.ccpp), **Function support**(function.support.ccpp) 
-
 # Use the C++ Starting Kit build system
 
 ## Prerequisite
-If you want to use the **C++ Starting Kit** build system you will need to combine 5 elements :
+If you want to use the **C++ Starting Kit** build system to compile your programs you will need to combine 5 elements :
 * Install a compiler compatible with g++. In our case MinGW-w64 for x86 and x64 developments.
 * [Add your compiler to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path).
 * Restart your computer.
@@ -281,6 +171,115 @@ Default commands for `Build` and `Run` with **C++ Starting Kit** build system ar
 * `Ctrl + B` to build your program.
 * `Ctrl + Shit + B` to run your program.
 
+# Install C++ Starting Kit
+
+### Manually
+
+(To do)
+
+### From Package Control
+
+(To do)
+
+# Customize your color scheme
+
+If you use a default color scheme or something downloaded from the Internet you will have to add [**C++ Starting Kit** scopes](https://github.com/kodLite/cppStartingKit#c-starting-kit-scope-list) inside your `*.tmTheme` configuration file.
+
+A recommended alternative is to try the [Oasis Theme](https://github.com/kodLite/Oasis-Theme) especially build for. 
+
+Otherwise you can take a look to the following. The next part is design as set of useful tips to customize your Sublime Text environment.
+
+### Locate your color scheme configuration file
+
+* Default color schemes are located inside the `Sublime Text/Packages` folder in a file called `Color Scheme - Default.sublime-package`. (see [how to edit a *.sublime package](https://github.com/kodLite/cppStartingKit#how-to-edit-a-sublime-package)) 
+* User color schemes are located in `Sublime Text/Data/Packages/User` folder as a `*.tmTheme` file.
+
+If you want to tweak a default color scheme I recommend you to copy and rename it in your `Sublime Text/Data/Packages/User` folder.
+
+### Change your color scheme
+
+* Go to `Preferences > Color Scheme` menu then make your choice between `Color Scheme - Default` and `User` color schemes if you have one.
+
+### Find a scope name
+
+* Put your cursor under the scope you want to know the name.
+* Type `Ctrl + Alt + Shift + P`.
+* The name will appear at the bottom of your Sublime Text interface.
+
+### Search a scope in your color scheme configuration file
+
+* Make a search by typing `Ctrl + F`.
+* Type what you want to find and don't forget to look everywhere in the document by pressing `Find` and `Find Prev`.
+
+### Add a missing scope in your color scheme configuration file
+
+If you are sure that a scope is missing in your `*.tmTheme` file, which contain your color scheme, add the following lines and fill corretly the fields between the tags(`<tag>Your specification</tag>`) :
+
+		<dict>
+			<key>name</key>
+			<string>Scope name</string> 		<!-- Enter a name for your scope here. -->
+			<key>scope</key>
+			<string>Scope definition</string> 	<!-- Enter your scopes here. (ex : keyword.ccpp) -->
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string> 				<!-- Choose a style (ex : italic, bold, italic bold) -->
+				<key>foreground</key>
+				<string></string> 				<!-- Choose a color (ex : #49a629) -->
+			</dict>
+		</dict>
+
+### C++ Starting Kit scope list
+
+**Arithmetic operators**(keyword.operator.arithmetic.ccpp), **Brackets**(open.curly.bracket.ccpp, close.curly.bracket.ccpp,open.round.bracket.ccpp, close.round.bracket.ccpp, open.angle.bracket.ccpp, close.angle.bracket.ccpp, open.curly.bracket.ovr.ccpp, close.curly.bracket.ovr.ccpp), **Block brackets**(open.curly.bracket.block.ccpp, close.curly.bracket.block.ccpp), **Punctuation**(period.ccpp, coma.ccpp,semi_colon.ccpp), **End of line semi colon**(semi_colon.eol.ccpp), **Function support**(function.support.ccpp)
+
+#Customize your syntax definition
+
+## What you need to know
+
+### Introduction
+
+`*.sublime-package` inside your `Sublime Text/Packages` folder contains specific default languages definitions as well as the default theme, `Theme - Default.sublime-package`, and the default color schemes, `Color Scheme - Default.sublime-package`.
+
+Syntax definitions are mainly define by a configuration file, `*.tmLanguage`, inside those `*.sublime-package`.
+
+### How to edit a *.sublime package
+
+`*.sublime-package` like **C++ Starting Kit** are `*.zip` archive. If you want to modify files inside those packages you have to follow these steps :
+* Inside your `Sublime Text/Packages` folder you have to find the package you want to modify.
+* Copy and paste it in a safe place and do your tweaks on this copy.
+* To open the package you have to rename it in `*.zip` then extract it.
+* Inside the extracted folder you will find the editable files.
+* When finished, save your changes.
+* Close Sublime Text. 
+* "Re-archive" your extracted folder in `*.zip` then rename it in `*.sublime-package`.
+* Copy your updated `*.sublime-package` and overwrite the one in your `Sublime Text/Packages` folder.
+* Restart Sublime Text.
+
+### Global Structure of CCpp.tmLanguage
+
+The `CCpp.tmLanguage` file is the syntax definition included in the **C++ Starting Kit** package.
+
+It is based on the default `C++.sublime-package` file and tweaked as follow :
+
+* `C.tmLanguage` and `C++.tmLanguage`, which were mainly responsible of the syntax definition for the default C and C++ language support, were splitted, documented, merged and improved in [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).
+* `C++.sublime-build`, which embedded the default build system for C and C++, was customized and renamed in [`CCpp.sublime-build`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-build).
+* `C++.sublime-settings`, which specifies the supported file types, was just renamed in [`CCpp.sublime-settings`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.sublime-settings). 
+* All the other files were preserved.
+
+### Logic behind CCpp.tmLanguage
+
+The [`CCpp.tmLanguage`](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage) file was coded with a very simple logic : a main behavior is establish then small chunks of code were added to improve functionnalities and avoid undesirable behaviors.
+
+For example the curly brackets were defined as `open.curly.bracket.ccpp` and `close.curly.bracket.ccpp`. Then `open.curly.bracket.block.ccpp` and `close.curly.bracket.block.ccpp` were added to override this first definition and define what we could call the curly brackets "block detection". After tests it seems that few exceptions appears and they are corrected by adding an additional code layer.   
+
+![C++ Starting Kit logic](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/logic-ccpp-illustrated.jpg?raw=true)
+
+If you want to follow this process you have to put your main behaviors at the bottom and override them to the top, and not the opposite. (see the example below)
+
+![C++ Starting Kit Syntax Definition Override](https://github.com/kodLite/cppStartingKit/blob/master/screenshot/overrides.jpg?raw=true)
+
+The main idea behind this process is to have a flexbible and easily manageable and maintainable system which allow improvements without breaking everything. 
 
 # Going further
 

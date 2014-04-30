@@ -44,9 +44,9 @@ As it is my primary tool for my learning of C++ I will do my best to make it ful
 The Guide
 =========
 
-If you are new in C++ and you want to use Sublime Text as a small IDE the **C++ Starting Kit** and this guide are for you. 
+This guide is design for people who are really new in C++ programming and want to use Sublime Text as a small IDE. If you follow these instructions step by step you will get crucial informations about Sublime Text environment, the **C++ Starting Kit** and a real starting point for C++ developments.
 
-If you are anyone else you can find tips to customize your Sublime Text environment.
+If you are anyone else you can find tips to customize your Sublime Text environment for C++ or else.
 
 This guide covers the key points to start using Sublime Text 3 for C++ projects under Windows 7 x64. Things are pretty much the same depending on your version of Sublime Text and your operating system. 
 
@@ -57,12 +57,27 @@ I created this project because as a beginner in programming I needed a digestibl
 I hope you will find relevant informations to suit to your needs.
 
 # Install Python
-(to do)
+
+### Why Python is necessary
+
+Sublime Text 2 is based on [Python 2.6](https://www.python.org/downloads/)(also compatible with higher versions but inferior to 3 versions) and Sublime Text 3 on [Python 3](https://www.python.org/downloads/)(or more).
+
+By default Python is not installed on Windows systems and if you want to take the best of Sublime Text, especially the plugin packages which are the core of this application, you need to have the right dedicated version of Python installed.
+
+To make it functional you have to :
+
+* Download the appropriate version of Python depending of your Sublime Text version.
+
+You can have multiple versions of Python installed.
+
+* Add Python to your system path.
+
+Follow [this guide](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path) for MinGW-w64 and adapt it to Python. The path you will have to add at the end is the main directory of your Python installation, where `python.exe` is sotred.
 
 # Use the C++ Starting Kit build system
 
 ## Prerequisite
-If you want to use the **C++ Starting Kit** build system to compile your programs you will need to combine 5 elements :
+If you want to use the **C++ Starting Kit** build system to compile your C++ programs inside Sublime Text you will need to combine 5 elements :
 * Install a compiler compatible with g++. In our case MinGW-w64 for x86 and x64 developments.
 * [Add your compiler to your system path](https://github.com/kodLite/cppStartingKit#add-folders-to-your-system-path).
 * Restart your computer.
@@ -94,7 +109,7 @@ For the next installation sequence you have to remember the path where you will 
 ### Add folders to your system path
 Add folders to your system path allow your system to share programs which can be call by other programs.
 
-The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-w64/bin`folder, is required by the **C++ Starting Kit** build system and must be available in your system path to allow Sublime Text to access it. To do it just follow those steps :
+The command `g++`, which is in reality the `g++.exe` file stored in your `MinGW-w64/bin`folder, is required by the **C++ Starting Kit** build system and must be available in your system path to allow Sublime Text to access it. To do it just follow these steps :
 
 * Go to your `Start Menu`.
 * Right click on `Computer` then select `Properties`.

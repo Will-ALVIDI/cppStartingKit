@@ -197,6 +197,12 @@
 ----------------------------------------------------->	
 		<dict>
 			<key>match</key>
+			<string>\;(?=(\s*|\t*)\/\*\s*.*\*\/(\r|\n))</string>
+			<key>name</key>
+			<string>semi_colon.eol.ccpp</string>
+		</dict>
+		<dict>
+			<key>match</key>
 			<string>\;(?=(\s*|\t*)\/\/\s*.*(\r|\n))</string>
 			<key>name</key>
 			<string>semi_colon.eol.ccpp</string>

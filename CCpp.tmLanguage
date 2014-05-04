@@ -489,25 +489,25 @@
 			<key>match</key>
 			<string>(?&lt;=class|wchar_t|nullptr_t)\s\w+</string>
 			<key>name</key>
-			<string>function.support.ccpp</string>
+			<string>meta.class-struct.c++ entity.name.type.c++</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\w+(?=\()</string>
 			<key>name</key>
-			<string>function.support.ccpp</string>
+			<string>meta.function.c entity.name.function.c</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=\.)\w+(?=[^\w|\.])</string>
 			<key>name</key>
-			<string>function.support.ccpp</string>
+			<string>meta.function.c meta.block.c meta.function-call.c support.function.any-method.c</string>
 		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(\w+\:\:\w+)\b</string>
 			<key>name</key>
-			<string>function.support.ccpp</string>
+			<string>meta.function.c entity.name.function.c</string>
 		</dict>
 <!--------------------------------------
 	String Quoted Double - C

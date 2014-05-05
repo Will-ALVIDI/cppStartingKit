@@ -26,22 +26,20 @@ The main objective of this project is to **provide a complete starting kit and s
 As it is my primary tool for my learning of C++ I will do my best to make it fully functional as soon as possible.
 
 ## Preview
-**[Oasis Theme](https://github.com/kodLite/Oasis-Theme) not included**
+**[Oasis Theme](https://github.com/kodLite/Oasis-Theme) and [Soda Theme](http://buymeasoda.github.io/soda-theme/) not included**
 
-![C++ Starting Kit Standard behavior](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/standard-behavior.jpg?raw=true)
+**A better language definition**
 
-**Arithmetic operators are now customizable.**
+![C++ Starting Kit - Definition](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/0.1.6/C++-Starting-Kit---Definitions.jpg)
 
-![C++ Starting Kit Arithmetic Operators](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/custom-arithmetic-operators.jpg?raw=true)
+**Fully customizable operator types**
 
-**More customization.**
+![C++ Starting Kit - Operators](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/0.1.6/C++-Starting-Kit---Operators.jpg)
 
-![C++ Starting Kit Customize Everything](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/customize-everything.jpg?raw=true)
+**Fully customizable punctuation with extra features**
 
-**Any function support.**
+![C++ Starting Kit](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/0.1.6/C++-Starting-Kit---Punctuation.jpg)
 
-![C++ Starting Kit Any Function Support](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/any-function-detection.jpg?raw=true)
+**Documented code for an easy maintenance**
 
-**Easily [add to your syntax definition](https://github.com/kodLite/cppStartingKit-Guide#customize-your-syntax-definition) with the [documented configuration file](https://github.com/kodLite/cppStartingKit/blob/master/CCpp.tmLanguage).**
-
-![C++ Starting Kit Add Keyword](https://github.com/kodLite/cppStartingKit-Guide/blob/master/screenshot/cppStartingKit/Namespace-added.jpg?raw=true)
+![C++ Starting Kit - Maintenance](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/Namespace-added.jpg)

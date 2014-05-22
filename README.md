@@ -40,6 +40,11 @@ As it is my primary tool for my learning of C++ I will do my best to make it ful
 
 ![C++ Starting Kit](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/0.1.6/C++-Starting-Kit---Punctuation.jpg)
 
+**C++11 raw string support**
+
+![Raw string support](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/0.1.9/raw-string-support.jpg)
+
+
 **Documented code for an easy maintenance**
 
 ![C++ Starting Kit - Maintenance](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/Namespace-added.jpg)

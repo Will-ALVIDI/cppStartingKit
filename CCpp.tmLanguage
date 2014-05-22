@@ -52,7 +52,7 @@
 	<key>patterns</key>
 	<array>
 <!---------------------------------------------------
-	Includes (from repositories) - C
+	Includes (from repositories) - CCpp
 --------------------------------------------------->
 		<dict>
 			<key>include</key>
@@ -77,6 +77,84 @@
 		<dict>
 			<key>include</key>
 			<string>#disabled</string>
+		</dict>
+<!----------------------------------------
+	Raw String (exception)- CCpp
+---------------------------------------->
+		<dict>
+			<key>begin</key>
+			<string>(R|Ru|RU|uR|UR)(\"\+\*\()\.*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>prefix</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>begin</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\)\+\*\")</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>end</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>raw.string.ccpp</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#comments</string>
+				</dict>
+			</array>
+		</dict>
+<!----------------------------------------
+	Raw String - CCpp
+---------------------------------------->
+		<dict>
+			<key>begin</key>
+			<string>(R|Ru|RU|uR|UR)(\"\()\.*</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>prefix</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>begin</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\)\")</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>end</string>
+				</dict>
+			</dict>
+			<key>name</key>
+			<string>raw.string.ccpp</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>#comments</string>
+				</dict>
+			</array>
 		</dict>
 <!----------------------------------------
 	Member Initializer - CCpp
@@ -234,12 +312,6 @@
 <!-----------------------------------------
 	Storage Modifier - C++11
 ------------------------------------------->	
-		<dict>
-			<key>match</key>
-			<string>\b(const|constexpr|extern|register|static|volatile|inline)\b</string>
-			<key>name</key>
-			<string>storage.modifier.c++11</string>
-		</dict>
 		<dict>
 			<key>match</key>
 			<string>\b(constexpr|auto)\b</string>
@@ -621,7 +693,7 @@
 					<string>close.round.bracket.ccpp</string>
 				</dict>
 <!------------------------------------------
-	Angle Brackets - CC++
+	Angle Brackets - CCpp
 -------------------------------------------->
 				<dict>
 					<key>match</key>
@@ -856,7 +928,7 @@
 			</array>
 		</dict>
 <!--------------------------------------
-	Include/Import - C
+	Meta Preprocessor Include - C
 ---------------------------------------->
 		<dict>
 			<key>begin</key>
@@ -932,7 +1004,7 @@
 			</array>
 		</dict>
 <!--------------------------------------
-	Meta Preprocessor C - C
+	Meta Preprocessor - C
 ---------------------------------------->
 		<dict>
 			<key>begin</key>

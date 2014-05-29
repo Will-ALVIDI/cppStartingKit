@@ -1191,7 +1191,7 @@
 			<key>comment</key>
 			<string>eat nested preprocessor if(def)s</string>
 			<key>end</key>
-			<string>^\s*#\s*endif\b.*$</string>
+			<string>^\s*#\s*endif\b</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1278,7 +1278,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?=^\s*#\s*endif\b.*$)</string>
+					<string>(?=^\s*#\s*endif\b)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1291,7 +1291,7 @@
 					<key>begin</key>
 					<string></string>
 					<key>end</key>
-					<string>(?=^\s*#\s*(else|endif)\b.*$)</string>
+					<string>(?=^\s*#\s*(else|endif)\b)</string>
 					<key>name</key>
 					<string>comment.block.preprocessor.if-branch</string>
 					<key>patterns</key>
@@ -1356,7 +1356,7 @@
 					<key>contentName</key>
 					<string>comment.block.preprocessor.else-branch</string>
 					<key>end</key>
-					<string>(?=^\s*#\s*endif\b.*$)</string>
+					<string>(?=^\s*#\s*endif\b)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1373,7 +1373,7 @@
 					<key>begin</key>
 					<string></string>
 					<key>end</key>
-					<string>(?=^\s*#\s*(else|endif)\b.*$)</string>
+					<string>(?=^\s*#\s*(else|endif)\b)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1386,7 +1386,7 @@
 		</dict>
 <!-------------------------------------------
 	Preprocessor Rule Other - C
----------------------------------------------->	
+---------------------------------------------->
 		<key>preprocessor-rule-other</key>
 		<dict>
 			<key>begin</key>
@@ -1405,7 +1405,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>^\s*(#\s*(endif)\b).*$</string>
+			<string>^\s*(#\s*(endif)\b)</string>
 			<key>patterns</key>
 			<array>
 				<dict>

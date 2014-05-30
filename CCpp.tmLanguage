@@ -3,18 +3,18 @@
 <plist version="1.0">
 <dict>
 <!-------------------------------------------
-	File Type Support 
-------------------------------------------->	
+	File Type Support
+------------------------------------------->
 	<key>fileTypes</key>
 	<array>
 <!-------------------------------------------
-	C File Type Support 
+	C File Type Support
 ------------------------------------------->
 		<string>c</string>
 		<string>h</string>
 <!-------------------------------------------
-	C++ File Type Support 
-------------------------------------------->		
+	C++ File Type Support
+------------------------------------------->
 		<string>cpp</string>
 		<string>cc</string>
 		<string>cp</string>
@@ -34,7 +34,7 @@
 	-[*]-( Mode:)? C -[*]-
 	|
 	-\*- C\+\+ -\*-
-	</string>	
+	</string>
 	<key>foldingStartMarker</key>
 	<string>(?x)
 		 /\*\*(?!\*)
@@ -46,7 +46,7 @@
 	<string>^~C</string>
 <!-----------------------------------------
 	Display Syntax As
-------------------------------------------->		
+------------------------------------------->
 	<key>name</key>
 	<string>C/C++(11)</string>
 	<key>patterns</key>
@@ -158,7 +158,7 @@
 		</dict>
 <!----------------------------------------
 	Member Initializer - CCpp
----------------------------------------->	
+---------------------------------------->
 		<dict>
 			<key>begin</key>
 			<string>(\:)\s*(\w+\(\w+\))+</string>
@@ -257,7 +257,7 @@
 		</dict>
 <!-----------------------------------------
 	Storage Type - C++11
-------------------------------------------->	
+------------------------------------------->
 		<dict>
 			<key>match</key>
 			<string>\b(size_t|int8_t|int16_t|int32_t|int64_t|uint8_t|uint16_t|uint32_t|uint64_t|char16_t|char32_t)\b</string>
@@ -311,7 +311,7 @@
 		</dict>
 <!-----------------------------------------
 	Storage Modifier - C++11
-------------------------------------------->	
+------------------------------------------->
 		<dict>
 			<key>match</key>
 			<string>\b(constexpr|auto)\b</string>
@@ -411,7 +411,7 @@
 		</dict>
 <!--------------------------------------
 	Support Type POSIX thread- C
----------------------------------------->		
+---------------------------------------->
 		<dict>
 			<key>match</key>
 			<string>\b(pthread_attr_t|pthread_cond_t|pthread_condattr_t|pthread_mutex_t|pthread_mutexattr_t|pthread_once_t|pthread_rwlock_t|pthread_rwlockattr_t|pthread_t|pthread_key_t)\b</string>
@@ -499,7 +499,7 @@
 		</dict>
 <!---------------------------------------------------
 	Array - CCpp
------------------------------------------------------>	
+----------------------------------------------------->
 		<dict>
 			<key>match</key>
 			<string>\w+(?=\[)</string>
@@ -508,7 +508,7 @@
 		</dict>
 <!---------------------------------------------------
 	Function Support - CCpp
------------------------------------------------------>		
+----------------------------------------------------->
 		<dict>
 			<key>match</key>
 			<string>(?&lt;=class|wchar_t|nullptr_t)\s\w+</string>
@@ -592,13 +592,13 @@
 			<string>\&gt;\=</string>
 			<key>name</key>
 			<string>keyword.operator.comparison.ccpp</string>
-		</dict>	
+		</dict>
 		<dict>
 			<key>match</key>
 			<string>\&lt;\=</string>
 			<key>name</key>
 			<string>keyword.operator.comparison.ccpp</string>
-		</dict>		
+		</dict>
 		<dict>
 			<key>match</key>
 			<string>\=\=|\!\=|\&lt;|\&gt;</string>
@@ -607,7 +607,7 @@
 		</dict>
 <!----------------------------------------
 	Arithmetic operators - CCpp
------------------------------------------->	
+------------------------------------------>
 		<dict>
 			<key>match</key>
 			<string>\=|\+|\-|\*|\/|\%</string>
@@ -616,7 +616,7 @@
 		</dict>
 <!------------------------------------------
 	Curly Brackets (exceptions)- CCpp
--------------------------------------------->	
+-------------------------------------------->
 				<dict>
 					<key>match</key>
 					<string>(?&lt;=\s)\}(?=break|case|continue|default|do|else|for|goto|if|_Pragma|return|switch|while)</string>
@@ -643,7 +643,7 @@
 				</dict>
 <!------------------------------------------
 	Curly Brackets Block - CCpp
--------------------------------------------->	
+-------------------------------------------->
 				<dict>
 					<key>match</key>
 					<string>\{(?=(\s*|\t*)(\r|\n))</string>
@@ -664,7 +664,7 @@
 				</dict>
 <!------------------------------------------
 	Curly Brackets - CCpp
--------------------------------------------->	
+-------------------------------------------->
 				<dict>
 					<key>match</key>
 					<string>\{</string>
@@ -678,7 +678,7 @@
 					<string>close.curly.bracket.ccpp</string>
 				</dict>
 <!------------------------------------------
-	Round Brackets - CCpp 
+	Round Brackets - CCpp
 -------------------------------------------->
 				<dict>
 					<key>match</key>
@@ -709,7 +709,7 @@
 				</dict>
 <!---------------------------------------------------
 	Period - CCpp
------------------------------------------------------>	
+----------------------------------------------------->
 				<dict>
 					<key>match</key>
 					<string>\.</string>
@@ -718,7 +718,7 @@
 				</dict>
 <!---------------------------------------------------
 	Coma - CCpp
------------------------------------------------------>	
+----------------------------------------------------->
 				<dict>
 					<key>match</key>
 					<string>\,</string>
@@ -727,7 +727,7 @@
 				</dict>
 <!---------------------------------------------------
 	Semicolon End of Line (exceptions)- CCpp
------------------------------------------------------>	
+----------------------------------------------------->
 				<dict>
 					<key>match</key>
 					<string>\;(?=(\s*|\t*)\/\/\s*.*)</string>
@@ -748,10 +748,10 @@
 					<string>\s*?\;\s*?$</string>
 					<key>name</key>
 					<string>semi_colon.eol.ccpp</string>
-				</dict>	
+				</dict>
 <!---------------------------------------------------
 	Semicolon Block - CCpp
------------------------------------------------------>	
+----------------------------------------------------->
 				<dict>
 					<key>match</key>
 					<string>\;</string>
@@ -901,7 +901,7 @@
 		</dict>
 <!--------------------------------------
 	Meta Preprocessor Diagnostic - C
----------------------------------------->		
+---------------------------------------->
 		<dict>
 			<key>begin</key>
 			<string>^\s*#\s*(error|warning)\b</string>
@@ -1037,9 +1037,9 @@
 ----------------------------------------------------------------------------->
 <!-------------------------------------------------------------------------
 --
--- Here is the beginning of the repositories which could be include in 
+-- Here is the beginning of the repositories which could be include in
 -- patterns.
--- 
+--
 --
 --------------------------------------------------------------------------->
 	<key>repository</key>
@@ -1183,7 +1183,7 @@
 		</dict>
 <!----------------------
 	Disabled - C
-------------------------->	
+------------------------->
 		<key>disabled</key>
 		<dict>
 			<key>begin</key>
@@ -1191,7 +1191,7 @@
 			<key>comment</key>
 			<string>eat nested preprocessor if(def)s</string>
 			<key>end</key>
-			<string>^\s*#\s*endif\b.*$</string>
+			<string>^\s*#\s*endif\b</string>
 			<key>patterns</key>
 			<array>
 				<dict>
@@ -1206,7 +1206,7 @@
 		</dict>
 <!----------------------
 	Pragma Mark - C
-------------------------->	
+------------------------->
 		<key>pragma-mark</key>
 		<dict>
 			<key>captures</key>
@@ -1234,7 +1234,7 @@
 		</dict>
 <!-------------------------------------------
 	Preprocessor Rule Disabled - C
----------------------------------------------->	
+---------------------------------------------->
 		<key>preprocessor-rule-disabled</key>
 		<dict>
 			<key>begin</key>
@@ -1278,7 +1278,7 @@
 						</dict>
 					</dict>
 					<key>end</key>
-					<string>(?=^\s*#\s*endif\b.*$)</string>
+					<string>(?=^\s*#\s*endif\b)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1291,7 +1291,7 @@
 					<key>begin</key>
 					<string></string>
 					<key>end</key>
-					<string>(?=^\s*#\s*(else|endif)\b.*$)</string>
+					<string>(?=^\s*#\s*(else|endif)\b)</string>
 					<key>name</key>
 					<string>comment.block.preprocessor.if-branch</string>
 					<key>patterns</key>
@@ -1310,7 +1310,7 @@
 		</dict>
 <!-------------------------------------------
 	Preprocessor Rule Enabled - C
----------------------------------------------->	
+---------------------------------------------->
 		<key>preprocessor-rule-enabled</key>
 		<dict>
 			<key>begin</key>
@@ -1356,7 +1356,7 @@
 					<key>contentName</key>
 					<string>comment.block.preprocessor.else-branch</string>
 					<key>end</key>
-					<string>(?=^\s*#\s*endif\b.*$)</string>
+					<string>(?=^\s*#\s*endif\b)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1373,7 +1373,7 @@
 					<key>begin</key>
 					<string></string>
 					<key>end</key>
-					<string>(?=^\s*#\s*(else|endif)\b.*$)</string>
+					<string>(?=^\s*#\s*(else|endif)\b)</string>
 					<key>patterns</key>
 					<array>
 						<dict>
@@ -1386,7 +1386,7 @@
 		</dict>
 <!-------------------------------------------
 	Preprocessor Rule Other - C
----------------------------------------------->	
+---------------------------------------------->
 		<key>preprocessor-rule-other</key>
 		<dict>
 			<key>begin</key>
@@ -1405,7 +1405,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>^\s*(#\s*(endif)\b).*$</string>
+			<string>^\s*(#\s*(endif)\b)</string>
 			<key>patterns</key>
 			<array>
 				<dict>

@@ -445,15 +445,6 @@
 			<key>name</key>
 			<string>support.type.mac-classic.c</string>
 		</dict>
-<!---------------------------------------------------
-	Deconstructor - CCpp
------------------------------------------------------>
-		<dict>
-			<key>match</key>
-			<string>\~\w+</string>
-			<key>name</key>
-			<string>deconstructor.ccpp</string>
-		</dict>
 
 <!---------------------------------------------------
 	Pointer - CCpp
@@ -559,7 +550,7 @@
 ---------------------------------------->
 		<dict>
 			<key>match</key>
-			<string>\!(?=\w)</string>
+			<string>!(?=\s+|\w)</string>
 			<key>name</key>
 			<string>keyword.operator.logical.ccpp</string>
 		</dict>
@@ -574,7 +565,7 @@
 ---------------------------------------->
 		<dict>
 			<key>match</key>
-			<string>~(?=\w)</string>
+			<string>~(?=\s+|\w)</string>
 			<key>name</key>
 			<string>keyword.operator.bitwise.ccpp</string>
 		</dict>

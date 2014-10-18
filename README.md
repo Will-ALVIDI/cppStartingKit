@@ -3,9 +3,9 @@ C++ Starting Kit for Sublime Text
 
 ![C++ Starting Kit Teaser 1](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/cppStartingKit_teaser_001.jpg)
 
-**Présentation en [francais](https://github.com/kodLite/cppStartingKit-PresentationFr)**
+**Voir la [Présentation en francais](https://github.com/kodLite/cppStartingKit-PresentationFr)**
 
-**Documentation en [francais](https://github.com/kodLite/cppStartingKit-Guidefr)**
+**Voir le [Guide en francais](https://github.com/kodLite/cppStartingKit-Guidefr)**
 
 ## Features
 * C, C++ and C++11 combined and improved syntax highlighting support.

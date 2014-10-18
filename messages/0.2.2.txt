@@ -1,7 +1,3 @@
-'---------------
-C++ STARTING KIT
-----------------
-
 RELEASE NOTE
 ------------
 	Version 0.2.2

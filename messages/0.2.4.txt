@@ -1,0 +1,21 @@
+RELEASE NOTE
+------------
+	Version 0.2.4
+
+
+CHANGES
+-------
+	
+I encountered few issues updating the package to this state so I apologize if I caused you troubles during this weekend.
+
+You can see the changes just below :
+
+	
+	[v] Due to a conflict with the binary operator "~", the destructor highliting was removed.	
+	
+	[v] Logical operators "!" and "~" now should behave better.
+	
+	[v] Inheritance accessors now are higlighted.
+
+
+Have fun !!! ;)

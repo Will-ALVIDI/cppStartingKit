@@ -14,7 +14,10 @@ It is highly recommended to read the C++ Starting Kit Guide by following the lin
 	
 	https://github.com/kodLite/cppStartingKit-Guide
 	''''''''''''''''''''''''''''''''''''''''''''''''
+
+Have fun !!! ;)
 	
+
 
 APRES L'INSTALLATION
 --------------------
@@ -31,5 +34,7 @@ Apres le redemarrage verifiez :
 Il est fortement recommandé de lire le Guide du C++ Starting Kit en suivant le lien ci-dessous :
 
 	https://github.com/kodLite/cppStartingKit-Guidefr
-	''''''''''''''''''''''''''''''''''''''''''''''''
+	''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Amusez-vous bien !!! ;)
 	

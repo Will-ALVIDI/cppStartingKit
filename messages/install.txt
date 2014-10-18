@@ -1,8 +1,3 @@
-----------------
-C++ STARTING KIT
-----------------
-
-
 POST INSTALLATION
 -----------------
 
@@ -15,7 +10,7 @@ After the restart double check :
 == >> If you use the C++ Starting Kit build system. (from the Tools menu go to Build System > C++ Starting Kit) 
 
 
-For questions about post installation refer to the C++ Starting Kit Guide.
+It is highly recommended to read the C++ Starting Kit Guide by following the link just below :
 	
 	https://github.com/kodLite/cppStartingKit-Guide
 	''''''''''''''''''''''''''''''''''''''''''''''''
@@ -32,7 +27,8 @@ Apres le redemarrage verifiez :
 
 == >> Que vous utilisez bien le build system C++ Starting Kit. (a partir du menu Tools allez dans Build Sytem > C++ Starting Kit)
 
-Pour toute question concernant l'apres installation référez vous au C++ Starting Kit Guide en francais.
+
+Il est fortement recommandé de lire le Guide du C++ Starting Kit en suivant le lien ci-dessous :
 
 	https://github.com/kodLite/cppStartingKit-Guidefr
 	''''''''''''''''''''''''''''''''''''''''''''''''

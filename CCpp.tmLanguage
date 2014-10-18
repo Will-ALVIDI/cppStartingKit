@@ -299,7 +299,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(private:|protected:|public:)</string>
+			<string>\b(private\s*\:|protected\s*\:|public\s*\:)</string>
+			<key>name</key>
+			<string>storage.modifier.c++</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(private|protected|public)</string>
 			<key>name</key>
 			<string>storage.modifier.c++</string>
 		</dict>
@@ -324,6 +330,7 @@
 			<key>name</key>
 			<string>storage.modifier.c++</string>
 		</dict>
+
 <!-----------------------------------------------
 	Constant Other Variable Mac Classic C - C
 ------------------------------------------------>

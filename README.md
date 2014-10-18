@@ -3,7 +3,7 @@ C++ Starting Kit for Sublime Text
 
 ![C++ Starting Kit Teaser 1](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/cppStartingKit_teaser_001.jpg)
 
-**Présentation en [francais](https://github.com/kodLite/cppStartingKit-PreviewFr/blob/master/README.md)**
+**Présentation en [francais](https://github.com/kodLite/cppStartingKit-PresentationFr)**
 
 **Documentation en [francais](https://github.com/kodLite/cppStartingKit-Guidefr)**
 

@@ -48,7 +48,7 @@
 	Display Syntax As
 ------------------------------------------->
 	<key>name</key>
-	<string>C/C++(11)</string>
+	<string>C++</string>
 	<key>patterns</key>
 	<array>
 <!---------------------------------------------------

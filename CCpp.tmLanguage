@@ -299,13 +299,13 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(private\s*\:|protected\s*\:|public\s*\:)</string>
+			<string>\b(private|protected|public)\b\s*\:</string>
 			<key>name</key>
 			<string>storage.modifier.c++</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(private|protected|public)</string>
+			<string>\b(private|protected|public)\b</string>
 			<key>name</key>
 			<string>storage.modifier.c++</string>
 		</dict>

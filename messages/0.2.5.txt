@@ -16,5 +16,6 @@ Now, inside the View > Syntax menu you will find a syntax called C++ Starting Ki
 
 Even if their highligthing are strictly the same I highly recommend you to adapt it to your current language if you want to minimize plugin compatibilty issues. 
 
+If you encounter plugin that need a C++.tmLanguage inside the default syntax folder (SublimeText/Packages), just copy/paste/rename the C++ Starting Kit to C++.tmLanguage inside this folder. 
 
 Have fun !!! ;)

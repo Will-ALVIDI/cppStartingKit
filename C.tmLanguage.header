@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<!-------------------------------------------
+	File Type Support
+------------------------------------------->
+	<key>fileTypes</key>
+	<array>
+<!-------------------------------------------
+	C File Type Support
+------------------------------------------->
+		<string>c</string>
+		<string>h</string>
+<!-------------------------------------------
+	C++ File Type Support
+------------------------------------------->
+		<string>c</string>
+		<string>h</string>
+	</array>
+	<key>firstLineMatch</key>
+	<string>-[*]-( Mode:)? C -[*]-</string>
+	<key>foldingStartMarker</key>
+	<string>(?x)
+		 /\*\*(?!\*)
+		|^(?![^{]*?//|[^{]*?/\*(?!.*?\*/.*?\{)).*?\{\s*($|//|/\*(?!.*?\*/.*\S))
+	</string>
+	<key>foldingStopMarker</key>
+	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
+	<key>keyEquivalent</key>
+	<string>^~C</string>
+<!-----------------------------------------
+	Display Syntax As
+------------------------------------------->
+	<key>name</key>
+	<string>C</string>
+	<key>patterns</key>
+	<array>

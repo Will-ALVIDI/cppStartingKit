@@ -1,0 +1,20 @@
+RELEASE NOTE
+------------
+	Version 0.2.5
+
+
+CHANGES
+-------
+	
+Due to the requirements of other plugins I renamed CCpp.tmLanguage and CCcc.sublime-settings to C++.tmLanguage and C++.sublime settings.
+
+I duplicated those files and renamed them to C.tmLanguage and C.sublime-settings. 
+
+Inside C.tmLanguage and C++.tmLanguage 1 line was changed, the syntax name, respectively now C and C++.
+
+Now, inside the View > Syntax menu you will find a syntax called C++ Starting Kit with a C and C++ highlighting.
+
+Even if their highligthing are strictly the same I highly recommend you to adapt it to your current language if you want to minimize plugin compatibilty issues. 
+
+
+Have fun !!! ;)

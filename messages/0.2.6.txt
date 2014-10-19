@@ -1,0 +1,41 @@
+RELEASE NOTE
+------------
+	Version 0.2.6
+
+
+CHANGES
+-------
+
+
+Due to the requirements of other plugins I renamed CCpp.tmLanguage and CCpp.sublime-settings to C++.tmLanguage and C++.sublime settings.
+
+I duplicated those files and renamed them to C.tmLanguage and C.sublime-settings. 
+
+Inside C.tmLanguage and C++.tmLanguage 1 line was changed, the syntax name, respectively now C and C++.
+
+Now, inside the View > Syntax menu you will find a syntax called C++ Starting Kit with a C and C++ highlighting.
+
+Even if their highligthing are strictly the same I highly recommend you to adapt it to your current language if you want to minimize plugin compatibilty issues. 
+
+If you encounter plugin that need a file called C++.tmLanguage inside the default syntax folder (SublimeText/Packages), just copy/paste/rename the C++ Starting Kit.sublime-package(from SublimeText/Data/Installed Packages folder) to C++.sublime-package inside the default syntax folder. 
+
+Have fun !!! ;)
+
+
+CHANGEMENTS
+-----------
+
+A cause des specifités d'autres plugins j'ai renommé CCpp.tmLanguage et CCpp.sublime-settings en C++.tmLanguage et C++.sublime-settings.
+
+J''ai dupliqué ces fichiers et renommés en C.tmLanguage et c.sublime-settings.
+
+A l'intérieur de C.tmLanguage et C++.tmLanguage seulement 1 ligne a changé, le nom de la syntax, respectivement maintenant C et C++.
+
+Maintenant, dans le menu View > Syntax vous trouverez une syntax appelé C++ Starting Kit avec un jeu de couleurs C et C++.
+
+Même si ces jeux de couleurs sont strictement identiques il est recommandé de l'adapter à votre language courant si vous voulez limiter les soucis de compatibilité.
+
+Si vous rencontrez un plugin qui réclame un fichier appelé C++.tmLanguage à l'intérieur du dossier de syntax par défaut (SublimeText/Packages), copier/coller/renommé le fichier C++ Starting Kit.sublime-package(contenu dans le dossier SublimeText/Data/Installed Packages) en C++.sublime-package dans le dossier par défaut des syntax.
+
+
+Amusez vous bien !!! ;) 

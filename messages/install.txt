@@ -1,14 +1,18 @@
 POST INSTALLATION
 -----------------
 
-== >> You will need to restart Sublime Text after this installation before to see the changes.
+You will need to restart Sublime Text after this installation before to see the changes.
 
 After the restart double check :
 
-== >> If you are in the C,C++(11) syntax. (from the View menu go to Syntax > C,C++(11))
+	If you are using the C++ Starting Kit syntax.
+		Go to : 
+		View > Syntax > Open all with current extension as...
+		> C++ Starting Kit and choose between C or C++
 
-== >> If you use the C++ Starting Kit build system. (from the Tools menu go to Build System > C++ Starting Kit) 
-
+	If you use the C++ Starting Kit build system. (Windows users only) 
+		Go to: 
+		Tools > Build System > C++ Starting Kit
 
 It is highly recommended to read the C++ Starting Kit Guide by following the link just below :
 	
@@ -22,14 +26,18 @@ Have fun !!! ;)
 APRES L'INSTALLATION
 --------------------
 
-== >> Vous devrez redemarrer Sublime Text apres l'installation avant de voir les changements.
+Vous devrez redemarrer Sublime Text apres l'installation avant de voir les changements.
 
-Apres le redemarrage verifiez :
+Apres le redémarrage verifiez :
 
-== >> Que vous utilisez bien la syntax C,C++(11). (a partir du menu View allez dans Syntax > C,C++(11))
+	Que vous utilisez bien la syntax du C++ Starting Kit.
+		Aller dans :
+		View > Syntax > Open all with current extension as...
+		> C++ Starting Kit et choisissez entre C ou C++
 
-== >> Que vous utilisez bien le build system C++ Starting Kit. (a partir du menu Tools allez dans Build Sytem > C++ Starting Kit)
-
+	Que vous utilisez bien le build system C++ Starting Kit. (Sous Windows seulement)
+		Aller dans :
+		Tools > Build System > C++ Starting Kit
 
 Il est fortement recommandé de lire le Guide du C++ Starting Kit en suivant le lien ci-dessous :
 

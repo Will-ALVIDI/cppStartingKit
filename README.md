@@ -3,6 +3,8 @@ C++ Starting Kit Plugin
 
 ![C++ Starting Kit Teaser 1](https://raw.githubusercontent.com/kodLite/cppStartingKit-Guide/master/screenshot/cppStartingKit/cppStartingKit_teaser_001.jpg)
 
+# [New documentation](http://cppstartingkitproject-guide.readthedocs.org/en/latest/#) available
+
 **Voir la [Présentation en francais](https://github.com/kodLite/cppStartingKit-PresentationFr)**
 
 **Voir le [Guide en francais](https://github.com/kodLite/cppStartingKit-Guidefr)**

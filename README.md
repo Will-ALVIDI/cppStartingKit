@@ -30,7 +30,7 @@ The **C++ Starting Kit Project** is a minimal set of useful tools and tips for *
 
 
 ## Preview
-**[Oasis Theme](https://github.com/kodLite/Oasis-Theme) and [Soda Theme](http://buymeasoda.github.io/soda-theme/) not included**
+**[Oasis Theme](https://github.com/kodLite/Oasis-Theme), [Soda Theme](http://buymeasoda.github.io/soda-theme/) and Consolas Font not included**
 
 **A better language definition**
 

@@ -1,6 +1,10 @@
-POST INSTALLATION
------------------
+RELEASE NOTE
+------------
+    Version 0.2.7
 
+
+CHANGES
+-------
 
     * New documentation available :
     

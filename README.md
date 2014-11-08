@@ -22,7 +22,7 @@ The **C++ Starting Kit Project** is a minimal set of useful tools and tips for *
 * A color scheme compatible with the C++ Starting Kit plugin
 * A recommended minimal environment.
 
-**The C++ Starting Kit Guide**
+**The C++ Starting Kit Project - Guide**
 
 * An accessible and structured documentation for a quick start.
 * A procedure for the integration of Git and other Linux Shell functionalities. (Windows 7 users only)

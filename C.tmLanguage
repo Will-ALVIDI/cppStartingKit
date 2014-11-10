@@ -542,7 +542,7 @@
 ---------------------------------------->
 		<dict>
 			<key>match</key>
-			<string>!(?=\s+|\w)</string>
+			<string>!(?&lt;=.)</string>
 			<key>name</key>
 			<string>keyword.operator.logical.ccpp</string>
 		</dict>
@@ -557,7 +557,7 @@
 ---------------------------------------->
 		<dict>
 			<key>match</key>
-			<string>~(?=\s+|\w)</string>
+			<string>~(?&lt;=.)</string>
 			<key>name</key>
 			<string>keyword.operator.bitwise.ccpp</string>
 		</dict>
@@ -1401,7 +1401,7 @@
 	C/C++ Native Features - End
 ----------------------------------------------------------------------------->		</dict>
 	<key>scopeName</key>
-	<string>source.c</string>
+	<string>source.c++</string>
 	<key>uuid</key>
 	<string>25066DC2-6B1D-11D9-9D5B-000D93589AF6</string>
 </dict>

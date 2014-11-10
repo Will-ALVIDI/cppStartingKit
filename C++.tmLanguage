@@ -548,7 +548,7 @@
 ---------------------------------------->
 		<dict>
 			<key>match</key>
-			<string>!(?=\s+|\w)</string>
+			<string>!(?&lt;=.)</string>
 			<key>name</key>
 			<string>keyword.operator.logical.ccpp</string>
 		</dict>
@@ -563,7 +563,7 @@
 ---------------------------------------->
 		<dict>
 			<key>match</key>
-			<string>~(?=\s+|\w)</string>
+			<string>~(?&lt;=.)</string>
 			<key>name</key>
 			<string>keyword.operator.bitwise.ccpp</string>
 		</dict>

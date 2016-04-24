@@ -1,9 +1,9 @@
 <snippet>
 	<description>main()</description>
-    <content><![CDATA[int main(int argc, char const${TM_C_POINTER: *}argv[])
-{
-	${0:/* code */}
-	return 0;
+    <content><![CDATA[int main(int argc, char const${TM_C_POINTER: *}argv[]) {
+    ${0:// Code Here}
+
+    return EXIT_SUCCESS;
 }]]></content>
     <tabTrigger>main</tabTrigger>
     <scope>source.c, source.objc, source.c++, source.objc++</scope> 

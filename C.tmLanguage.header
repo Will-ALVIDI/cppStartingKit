@@ -15,7 +15,9 @@
 <!-------------------------------------------
 	C++ File Type Support
 ------------------------------------------->
+		<string>cpp</string>
 		<string>c</string>
+		<string>hpp</string>
 		<string>h</string>
 	</array>
 	<key>firstLineMatch</key>

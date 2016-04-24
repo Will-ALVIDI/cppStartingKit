@@ -1,0 +1,10 @@
+<snippet>
+    <description>try ... catch</description>
+    <content><![CDATA[try {
+    ${1:// Code Here}
+} catch (${2:/* exception */} &e) {
+    ${3:// Code Here}
+}]]></content>
+    <tabTrigger>try</tabTrigger>
+    <scope>source.c, source.objc, source.c++, source.objc++</scope>
+</snippet>

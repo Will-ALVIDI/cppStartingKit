@@ -385,7 +385,7 @@
 -------------------------------->
 		<dict>
 			<key>match</key>
-			<string>\bnullptr\b</string>
+			<string>\b(nullptr|EXIT_SUCCESS|EXIT_FAILURE)\b</string>
 			<key>name</key>
 			<string>constant.language.c++</string>
 		</dict>
@@ -473,7 +473,7 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\*\w+</string>
+			<string>\*\\w+</string>
 			<key>name</key>
 			<string>pointer.ccpp</string>
 		</dict>
@@ -482,7 +482,7 @@
 ----------------------------------------------------->
 		<dict>
 			<key>match</key>
-			<string>\&\w+</string>
+			<string>\&\\w+</string>
 			<key>name</key>
 			<string>address.ccpp</string>
 		</dict>
